@@ -1,0 +1,2368 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ofertas Meli ARG 🛒</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&family=Nunito:wght@600;700;800;900&display=swap"
+    />
+    <link rel="stylesheet" href="hark.css" />
+    <link rel="stylesheet" href="hark-hero.css" />
+    <style>
+      /* Mercado Libre–style look (user-requested departure from the default design) */
+      html, body { background: #ededed; }
+      .x-store {
+        --x-yellow: #ffe600;
+        --x-navy: #2d3277;
+        --x-blue: #2968c8;
+        --x-blue-dark: #1f53a6;
+        --x-green: #00843f;
+        --x-white: #ffffff;
+        --x-bg: #ededed;
+        --x-ink: #333333;
+        --x-muted: #737373;
+        --x-line: rgba(0, 0, 0, 0.1);
+        --x-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+        font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        color: var(--x-ink);
+        background: var(--x-bg);
+        min-height: 100vh;
+      }
+      .x-store.page { padding: 0 0 40px; max-width: none; margin: 0; display: block; }
+      .x-wrap {
+        min-width: 0;
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 12px;
+      }
+      @media (max-width: 767px) { .x-wrap { padding: 0 8px; } }
+      @media (min-width: 768px) { .x-wrap { padding: 0 20px; } }
+
+      /* Sticky header + filter row */
+      .x-sticky {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+        transition: box-shadow 0.25s ease;
+      }
+      .x-sticky.is-scrolled { box-shadow: 0 4px 14px rgba(27, 42, 107, 0.22), 0 1px 3px rgba(0, 0, 0, 0.12); }
+
+      /* Header bar */
+      .x-top {
+        position: relative;
+        background:
+          radial-gradient(120% 140% at 0% 0%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 45%),
+          repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0 2px, rgba(255, 255, 255, 0) 2px 12px),
+          linear-gradient(120deg, #ffe600 0%, #ffd91a 55%, #ffc21f 100%);
+        border-bottom: 3px solid #3483fa;
+        box-shadow: inset 0 -1px 0 #2d3277;
+      }
+      .x-top__in {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 48px;
+        padding-block: 2px;
+      }
+      .x-brand {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex: 1 1 100%;
+        min-width: 0;
+        min-height: 56px;
+      }
+      @media (min-width: 768px) { .x-brand { flex: 0 1 auto; min-height: 64px; gap: 14px; } }
+      .x-logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-width: 0;
+        text-decoration: none;
+        color: #1b2a6b;
+        min-height: var(--tap);
+      }
+      .x-avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex: none;
+        background: #fff;
+        border: 2px solid #fff;
+        box-shadow: 0 0 0 2px rgba(45, 50, 119, 0.85), 0 3px 8px rgba(27, 42, 107, 0.35);
+      }
+      @media (min-width: 768px) { .x-avatar { width: 44px; height: 44px; } }
+      .x-brandtext { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+      .x-name {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 900;
+        font-size: clamp(21px, 6.2vw, 34px);
+        line-height: 1;
+        letter-spacing: -0.045em;
+        text-transform: uppercase;
+        color: #1b2a6b;
+        white-space: nowrap;
+        text-shadow:
+          2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
+          1.5px 1.5px 0 #fff, -1.5px 1.5px 0 #fff, 1.5px -1.5px 0 #fff, -1.5px -1.5px 0 #fff,
+          0 4px 6px rgba(27, 42, 107, 0.35);
+      }
+      .x-name__word {
+        position: relative;
+        display: inline-block;
+        padding: 3px 3px 5px;
+        margin: -3px -3px -5px;
+      }
+      .x-name__word::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(110deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 60%) no-repeat;
+        background-size: 300% 100%;
+        background-position: 100% 0;
+        opacity: 0;
+        pointer-events: none;
+        animation: x-sheen 1.4s var(--ease-out, ease-out) 0.5s 1 both;
+      }
+      @keyframes x-sheen {
+        0% { background-position: 100% 0; opacity: 1; }
+        99% { background-position: 0% 0; opacity: 1; }
+        100% { background-position: 0% 0; opacity: 0; }
+      }
+      @media (prefers-reduced-motion: reduce) { .x-name__word::after { animation: none; display: none; } }
+      .x-arg {
+        display: inline-flex;
+        align-items: center;
+        gap: 3px;
+        padding: 3px 7px 3px 6px;
+        border-radius: 999px;
+        background-color: #1f53a6;
+        background-image: linear-gradient(180deg, #2968c8 0%, #1f53a6 100%);
+        color: #fff;
+        font-size: clamp(12px, 3.4vw, 16px);
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        flex: none;
+        text-shadow: none;
+        box-shadow: 0 1px 2px rgba(27, 42, 107, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+      }
+      .x-tagline {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.15;
+        color: #1b2a6b;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      @media (min-width: 768px) { .x-tagline { font-size: 13px; } }
+      @media (max-width: 339px) { .x-tagline { display: none; } }
+      #q-count {
+        flex: none;
+        margin-left: auto;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 5px 10px 5px 8px;
+        border-radius: 999px;
+        background: #1b2a6b;
+        color: #fff;
+        line-height: 1;
+        box-shadow: 0 2px 6px rgba(27, 42, 107, 0.35), inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+        white-space: nowrap;
+      }
+      @media (min-width: 768px) { #q-count { padding: 8px 14px 8px 10px; } }
+      @media (prefers-reduced-motion: reduce) { .x-sticky { transition: none; } }
+
+      /* Hero */
+      .x-hero {
+        margin-top: 8px;
+        background: var(--x-white);
+        border-radius: 6px;
+        box-shadow: var(--x-shadow);
+        overflow: hidden;
+      }
+      .x-hero { overflow: visible; }
+      .x-banner-wrap {
+        padding: 14px max(14px, 2.5%);
+        overflow: visible;
+      }
+      .x-banner {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border-radius: 16px;
+        background: var(--x-navy);
+        box-shadow: 0 0 10px rgba(255, 230, 0, 0.45), 0 0 18px rgba(52, 131, 250, 0.3);
+        transform-origin: center;
+        animation: x-heartbeat 2.5s ease-in-out infinite;
+        will-change: transform;
+      }
+      @keyframes x-heartbeat {
+        0%, 100% { transform: scale(1); box-shadow: 0 0 10px rgba(255, 230, 0, 0.45), 0 0 18px rgba(52, 131, 250, 0.3); }
+        15% { transform: scale(1.03); box-shadow: 0 0 16px rgba(255, 230, 0, 0.8), 0 0 28px rgba(52, 131, 250, 0.55); }
+        30% { transform: scale(1); box-shadow: 0 0 10px rgba(255, 230, 0, 0.5), 0 0 18px rgba(52, 131, 250, 0.35); }
+        45% { transform: scale(1.02); box-shadow: 0 0 14px rgba(255, 230, 0, 0.7), 0 0 24px rgba(52, 131, 250, 0.5); }
+        60% { transform: scale(1); box-shadow: 0 0 10px rgba(255, 230, 0, 0.45), 0 0 18px rgba(52, 131, 250, 0.3); }
+      }
+      @media (prefers-reduced-motion: reduce) { .x-banner { animation: none; } }
+      /* Feature tiles under the banner */
+      .x-bio {
+        list-style: none;
+        margin: 0;
+        padding: 4px 10px 12px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+      }
+      .x-bio__tile {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 6px;
+        min-width: 0;
+        padding: 12px 6px 10px;
+        background: #fff;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(27, 42, 107, 0.1);
+        animation: x-bio-up 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+      }
+      .x-bio__tile:nth-child(2) { animation-delay: 0.1s; }
+      .x-bio__tile:nth-child(3) { animation-delay: 0.2s; }
+      .x-bio__tile:nth-child(4) { animation-delay: 0.3s; }
+      .x-bio__icon {
+        flex: none;
+        display: grid;
+        place-items: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: linear-gradient(145deg, #ffe600 0%, #ffb800 100%);
+        box-shadow: 0 0 0 2px #1b2a6b, 0 2px 6px rgba(27, 42, 107, 0.25);
+        font-size: 18px;
+        line-height: 1;
+      }
+      .x-bio__text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+      .x-bio__head {
+        color: #1b2a6b;
+        font-weight: 800;
+        font-size: 13px;
+        line-height: 1.2;
+      }
+      .x-bio__sub {
+        color: #4a5578;
+        font-size: 12px;
+        line-height: 1.3;
+      }
+      @keyframes x-bio-up {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: none; }
+      }
+      @media (prefers-reduced-motion: reduce) { .x-bio__tile { animation: none; } }
+      @media (max-width: 359px) {
+        .x-bio { grid-template-columns: 1fr; gap: 6px; }
+        .x-bio__tile { flex-direction: row; text-align: left; gap: 10px; padding: 10px 12px 8px; }
+      }
+      @media (min-width: 768px) {
+        .x-bio { gap: 14px; padding: 6px 16px 16px; }
+        .x-bio { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+        .x-bio__tile { flex-direction: row; text-align: left; gap: 12px; padding: 16px 14px 12px; }
+        .x-bio__icon { width: 46px; height: 46px; font-size: 22px; }
+        .x-bio__head { font-size: 16px; }
+        .x-bio__sub { font-size: 13px; }
+      }
+
+      /* Info strip */
+      .x-promo {
+        margin: 8px 0 0;
+        background: var(--x-blue-dark);
+        border-left: 5px solid var(--x-yellow);
+        color: var(--x-white);
+        border-radius: 6px;
+        padding: 8px 12px;
+        box-shadow: var(--x-shadow);
+      }
+      .x-promo p { margin: 0; }
+      .x-promo__lead {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.3;
+      }
+      .x-promo__small {
+        margin-top: 2px !important;
+        font-size: 13px;
+        line-height: 1.35;
+      }
+      @media (min-width: 768px) { .x-promo__lead { font-size: 15px; } .x-promo__small { font-size: 14px; } }
+
+      /* Filter chips: sticky row under the header */
+      .x-filterbar { background: var(--x-bg); border-bottom: 1px solid var(--x-line); }
+      .x-filters {
+        display: flex;
+        gap: 6px;
+        overflow-x: auto;
+        padding: 4px 0;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+      }
+      .x-filters::-webkit-scrollbar { display: none; }
+      .x-chip {
+        position: relative;
+        flex: none;
+        min-height: var(--tap);
+        padding: 0 14px;
+        border-radius: var(--r-pill);
+        border: 1px solid var(--x-line);
+        background: var(--x-white);
+        color: var(--x-ink);
+        font: inherit;
+        font-size: 13px;
+        cursor: pointer;
+        box-shadow: var(--x-shadow);
+        transition: background var(--dur-quick) var(--ease-out), color var(--dur-quick) var(--ease-out);
+      }
+      .x-chip:hover { color: var(--x-blue); }
+      .x-chip[aria-pressed="true"] { background: var(--x-blue); border-color: var(--x-blue); color: var(--x-white); font-weight: 600; }
+      .x-chip:focus-visible, .x-btn:focus-visible, .x-follow:focus-visible, .x-logo:focus-visible { outline: 2px solid var(--x-blue); outline-offset: 2px; }
+
+      /* Panel */
+      .x-panel {
+        margin-top: 8px;
+        background: var(--x-white);
+        border-radius: 6px;
+        box-shadow: var(--x-shadow);
+        padding: 10px 6px 8px;
+        scroll-margin-top: 126px;
+      }
+      @media (min-width: 768px) { .x-panel { padding: 16px; margin-top: 12px; } }
+      .x-panel__head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 4px 16px;
+        margin: 0 0 8px;
+        padding: 0 4px;
+      }
+      .x-title {
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.2;
+        color: var(--x-ink);
+        margin: 0;
+      }
+      @media (min-width: 768px) { .x-title { font-size: 22px; } }
+      .x-note { margin: 0; font-size: 14px; color: var(--x-muted); }
+
+      /* Product grid */
+      .x-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+      }
+      @media (min-width: 400px) { .x-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; } }
+      @media (min-width: 640px) { .x-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; } }
+      @media (min-width: 860px) { .x-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+      @media (min-width: 1024px) { .x-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; } }
+      .x-card {
+        position: relative;
+        background: var(--x-white);
+        border: 1px solid #eeeeee;
+        border-radius: 6px;
+        overflow: hidden;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        transition: box-shadow var(--dur-quick) var(--ease-out);
+      }
+      .x-card:hover { box-shadow: 0 7px 16px rgba(0, 0, 0, 0.12); }
+      .x-card[hidden] { display: none; }
+      /* Fixed square image box: padding-bottom keeps it square on every browser,
+         the image is taken out of flow so its own size can never stretch the card. */
+      .x-card .x-card__media {
+        position: relative;
+        display: block;
+        flex: 0 0 auto;
+        width: 100%;
+        height: 0;
+        min-height: 0;
+        max-height: none;
+        margin: 0;
+        padding: 0 0 100% 0;
+        overflow: hidden;
+        aspect-ratio: auto;
+        background: var(--x-white);
+        border-bottom: 1px solid #eeeeee;
+      }
+      .x-card .x-card__media img {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
+        width: calc(100% - 12px);
+        height: calc(100% - 12px);
+        min-width: 0;
+        min-height: 0;
+        max-width: none;
+        max-height: none;
+        margin: 0;
+        object-fit: contain;
+        object-position: center center;
+        display: block;
+      }
+      .x-card__emoji {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: grid;
+        place-items: center;
+        font-size: 44px;
+        filter: grayscale(0.3);
+      }
+      .x-soon {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        background: var(--x-blue-dark);
+        color: var(--x-white);
+        font-weight: 600;
+        font-size: 12px;
+        padding: 2px 6px;
+        border-radius: 3px;
+      }
+      .x-card__body {
+        padding: 6px 8px 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        flex: 1;
+      }
+      .x-card__title {
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 1.3;
+        color: var(--x-ink);
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        overflow-wrap: anywhere;
+        min-height: 2.6em;
+        max-height: 2.6em;
+        flex: none;
+      }
+      .x-card__desc {
+        font-size: 12px;
+        color: var(--x-muted);
+        margin: 0;
+        line-height: 1.3;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        min-height: 1.3em;
+        max-height: 1.3em;
+        flex: none;
+      }
+      .x-deal {
+        margin: 1px 0 0;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 5px;
+        min-width: 0;
+        min-height: 18px;
+        white-space: nowrap;
+      }
+      .x-off {
+        flex: none;
+        background: var(--x-green);
+        color: var(--x-white);
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1;
+        padding: 3px 4px;
+        border-radius: 3px;
+      }
+      .x-price__old {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 12px;
+        color: var(--x-muted);
+        text-decoration: line-through;
+      }
+      .x-price__now {
+        margin: 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.15;
+        color: var(--x-ink);
+        white-space: nowrap;
+      }
+      .x-btn {
+        margin-top: auto;
+        align-self: flex-start;
+        display: inline-flex;
+        align-items: center;
+        padding: 2px 0 0;
+        background: none;
+        color: var(--x-blue);
+        font: inherit;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        text-decoration: none;
+        border: 0;
+        cursor: pointer;
+      }
+      .x-card__body .x-btn { margin-top: auto; }
+      a.x-card { color: inherit; text-decoration: none; }
+      a.x-card:focus-visible { outline: 2px solid var(--x-blue); outline-offset: 2px; }
+      a.x-card:hover .x-btn { color: var(--x-blue-dark); text-decoration: underline; }
+      .x-btn.is-off { color: #595959; cursor: not-allowed; }
+
+      /* Back to top */
+      .x-totop {
+        position: fixed;
+        right: 12px;
+        bottom: 16px;
+        z-index: 30;
+        width: var(--tap);
+        height: var(--tap);
+        border-radius: 50%;
+        border: 0;
+        background: var(--x-blue);
+        color: var(--x-white);
+        font: inherit;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        opacity: 0;
+        transform: translateY(12px);
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity var(--dur-quick) var(--ease-out), transform var(--dur-quick) var(--ease-out), visibility 0s linear var(--dur-quick);
+      }
+      .x-totop[hidden] { display: none; }
+      .x-totop.is-on { opacity: 1; transform: none; visibility: visible; pointer-events: auto; transition-delay: 0s; }
+      .x-totop:hover { background: var(--x-blue-dark); }
+      .x-totop:focus-visible { outline: 2px solid var(--x-navy); outline-offset: 2px; }
+      .x-empty {
+        grid-column: 1 / -1;
+        text-align: center;
+        color: var(--x-muted);
+        padding: 24px;
+        margin: 0;
+      }
+
+      /* Load more */
+      .x-more-wrap { display: flex; justify-content: center; padding: 12px 4px 4px; }
+      .x-more-wrap:has(.x-more[hidden]) { padding: 0; }
+      .x-more {
+        min-height: var(--tap);
+        padding: 0 24px;
+        border-radius: 6px;
+        border: 0;
+        background: #e8f0fb;
+        color: #1f56a8;
+        font: inherit;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .x-more:hover { background: #d6e4f8; }
+      .x-more:focus-visible { outline: 2px solid var(--x-blue); outline-offset: 2px; }
+      .x-more[hidden] { display: none; }
+
+      /* Trust strip */
+      .x-trust {
+        list-style: none;
+        margin: 8px 0 0;
+        padding: 0;
+        background: var(--x-white);
+        border-radius: 6px;
+        box-shadow: var(--x-shadow);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+      }
+      @media (min-width: 640px) { .x-trust { grid-template-columns: repeat(4, 1fr); } }
+      .x-trust li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        padding: 12px 8px;
+        font-size: 14px;
+        line-height: 1.2;
+        color: var(--x-ink);
+      }
+      .x-trust span {
+        width: 48px;
+        height: 48px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: #f5f5f5;
+        font-size: 22px;
+      }
+
+      /* Footer */
+      .x-foot { margin-top: 24px; text-align: center; }
+      .x-follow {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-height: 48px;
+        padding: 10px 24px;
+        border-radius: 6px;
+        background: #000000;
+        color: var(--x-white);
+        font-weight: 600;
+        font-size: 16px;
+        text-decoration: none;
+        box-shadow: var(--x-shadow);
+      }
+      .x-follow:hover { background: #222222; }
+      .x-follow svg { width: 18px; height: 18px; fill: currentColor; }
+      .x-disclaimer {
+        margin: 12px 8px 0;
+        font-size: 12px;
+        color: #595959;
+        line-height: 1.45;
+      }
+      .x-store .badge { margin: 18px auto 0; }
+
+      /* Search */
+      .x-top__in { flex-wrap: wrap; column-gap: 16px; }
+      .x-search { position: relative; flex: 1 1 100%; min-width: 0; padding: 0 0 8px; }
+      @media (min-width: 768px) { .x-search { flex: 1 1 320px; max-width: 640px; margin-left: auto; padding: 6px 0; } }
+      .x-search__box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background: var(--x-white);
+        border-radius: 6px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      }
+      .x-search__box:focus-within { box-shadow: 0 0 0 2px var(--x-blue), 0 1px 2px rgba(0, 0, 0, 0.2); }
+      .x-search__icon {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        width: 18px;
+        height: 18px;
+        margin-top: -9px;
+        color: var(--x-muted);
+        pointer-events: none;
+      }
+      .x-search__input {
+        flex: 1;
+        min-width: 0;
+        width: 100%;
+        height: var(--tap);
+        margin: 0;
+        border: 0;
+        border-radius: 6px;
+        background: transparent;
+        padding: 0 44px 0 40px;
+        font: inherit;
+        font-size: 16px;
+        color: var(--x-ink);
+        text-overflow: ellipsis;
+        -webkit-appearance: none;
+        appearance: none;
+      }
+      .x-search__input:focus { outline: none; }
+      .x-search__input::placeholder { color: var(--x-muted); opacity: 1; }
+      @media (max-width: 400px) { .x-search__input::placeholder { font-size: 14px; } }
+      .x-search__input::-webkit-search-cancel-button,
+      .x-search__input::-webkit-search-decoration { -webkit-appearance: none; appearance: none; }
+      .x-search__clear {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: var(--tap);
+        height: var(--tap);
+        display: grid;
+        place-items: center;
+        border: 0;
+        border-radius: 6px;
+        background: none;
+        color: var(--x-muted);
+        font: inherit;
+        font-size: 16px;
+        line-height: 1;
+        cursor: pointer;
+      }
+      .x-search__clear:hover { color: var(--x-ink); }
+      .x-search__clear[hidden] { display: none; }
+      .x-search__clear:focus-visible, .x-sugg__btn:focus-visible, .x-noresults__btn:focus-visible { outline: 2px solid var(--x-blue); outline-offset: 2px; }
+      .x-sugg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: calc(100% - 4px);
+        z-index: 2;
+        background: var(--x-white);
+        border-radius: 6px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+        padding: 10px;
+      }
+      .x-sugg[hidden] { display: none; }
+      .x-sugg__label { margin: 0 0 8px; font-size: 12px; color: var(--x-muted); }
+      .x-sugg__list { display: flex; flex-wrap: wrap; gap: 6px; }
+      .x-sugg__btn {
+        min-height: var(--tap);
+        padding: 0 14px;
+        border-radius: var(--r-pill);
+        border: 1px solid var(--x-line);
+        background: var(--x-white);
+        color: var(--x-ink);
+        font: inherit;
+        font-size: 13px;
+        cursor: pointer;
+      }
+      .x-sugg__btn:hover { color: var(--x-blue); border-color: var(--x-blue); }
+      .x-card__title mark {
+        background: rgba(255, 230, 0, 0.6);
+        color: inherit;
+        border-radius: 2px;
+        padding: 0;
+      }
+      .x-count { flex-basis: 100%; order: 3; }
+      .x-count[hidden], #q-count[hidden], #q-count:empty { display: none !important; }
+      .x-sort {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: auto;
+        align-self: center;
+        font-size: 14px;
+        color: var(--x-muted);
+        white-space: nowrap;
+      }
+      .x-sort__wrap { position: relative; display: inline-flex; }
+      .x-sort select {
+        min-height: var(--tap);
+        padding: 0 32px 0 12px;
+        border: 1px solid var(--x-line);
+        border-radius: 6px;
+        background: var(--x-white);
+        color: var(--x-ink);
+        font: inherit;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        -webkit-appearance: none;
+        appearance: none;
+        box-shadow: var(--x-shadow);
+      }
+      .x-sort select:hover { border-color: var(--x-blue); }
+      .x-sort select:focus-visible { outline: 2px solid var(--x-blue); outline-offset: 2px; }
+      .x-sort__wrap::after {
+        content: "";
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        width: 7px;
+        height: 7px;
+        margin-top: -6px;
+        border-right: 2px solid var(--x-blue);
+        border-bottom: 2px solid var(--x-blue);
+        transform: rotate(45deg);
+        pointer-events: none;
+      }
+      @media (max-width: 479px) {
+        .x-sort { flex-basis: 100%; margin-left: 0; }
+        .x-sort__wrap { flex: 1; }
+        .x-sort select { width: 100%; }
+      }
+      .x-noresults {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding: 28px 16px;
+        margin: 0;
+      }
+      .x-noresults[hidden] { display: none; }
+      .x-noresults p { margin: 0 0 12px; font-size: 15px; color: var(--x-ink); line-height: 1.4; }
+      .x-noresults__btn {
+        min-height: var(--tap);
+        padding: 0 20px;
+        border-radius: 6px;
+        border: 0;
+        background: var(--x-blue);
+        color: var(--x-white);
+        font: inherit;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .x-noresults__btn:hover { background: var(--x-blue-dark); }
+      @media (max-width: 767px) { .x-panel { scroll-margin-top: 178px; } }
+
+      /* Meli diagonal stripes (style of the central banner) */
+      .x-store {
+        --x-stripes: repeating-linear-gradient(120deg,
+          #ffe600 0 46px, #1b2a6b 46px 58px, #3483fa 58px 92px, #ffe600 92px 104px,
+          #1f53a6 104px 124px, #1b2a6b 124px 150px, #ffe600 150px 210px,
+          #3483fa 210px 222px, #1f53a6 222px 260px);
+        --x-stripes-thin: repeating-linear-gradient(120deg,
+          #ffe600 0 12px, #1b2a6b 12px 16px, #3483fa 16px 25px, #ffe600 25px 29px,
+          #1f53a6 29px 34px, #1b2a6b 34px 41px, #ffe600 41px 55px,
+          #3483fa 55px 59px, #1f53a6 59px 68px);
+        --x-card-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(27, 42, 107, 0.08);
+      }
+
+      /* Brand bar: stripes under a yellow veil, thin striped edge below */
+      .x-top {
+        background:
+          linear-gradient(90deg, rgba(255, 230, 0, 0.95) 0, rgba(255, 230, 0, 0.9) 300px, rgba(255, 230, 0, 0.55) 62%, rgba(255, 230, 0, 0.38) 100%),
+          var(--x-stripes);
+        border-bottom: 0;
+        box-shadow: none;
+      }
+      .x-top { border-bottom: 1px solid rgba(27, 42, 107, 0.12); }
+
+      /* Wordmark heartbeat, same rhythm as the banner */
+      .x-name { gap: 10px; }
+      .x-name__word {
+        transform-origin: left center;
+        animation: x-word-beat 2.5s ease-in-out infinite;
+        will-change: transform;
+      }
+      @keyframes x-word-beat {
+        0%, 100% { transform: scale(1); }
+        15% { transform: scale(1.04); }
+        30% { transform: scale(1); }
+        45% { transform: scale(1.02); }
+        60% { transform: scale(1); }
+      }
+      @media (prefers-reduced-motion: reduce) { .x-name__word { animation: none; } }
+
+      /* Tagline + verified badge */
+      .x-subline {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+        min-width: 0;
+      }
+      .x-subline .x-tagline { max-width: 100%; }
+      @media (min-width: 1024px) { .x-subline { flex-direction: row; align-items: center; gap: 10px; } }
+      .x-verified {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        max-width: 100%;
+        padding: 2px 8px 2px 3px;
+        border-radius: 999px;
+        background: #fff;
+        border: 1px solid #3483fa;
+        color: #1b2a6b;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        box-shadow: 0 1px 2px rgba(27, 42, 107, 0.18);
+      }
+      .x-verified svg { width: 14px; height: 14px; flex: none; }
+      @media (max-width: 767px) { .x-brand { min-height: 0; padding: 4px 0 2px; } .x-brandtext { gap: 2px; } }
+
+      /* Blocks: plain white with a soft shadow */
+      .x-hero, .x-panel {
+        border-radius: 12px;
+        background-color: #fff;
+        box-shadow: var(--x-card-shadow);
+      }
+      .x-sort { color: #595959; }
+
+      /* Premium promo callout */
+      .x-promo {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        border: 0;
+        border-radius: 16px;
+        background-color: #1b2a6b;
+        background-image: linear-gradient(120deg, #1b2a6b 0%, #1f53a6 100%);
+        color: #fff;
+        padding: 14px 18px;
+        box-shadow: 0 6px 20px rgba(27, 42, 107, 0.28), 0 1px 3px rgba(0, 0, 0, 0.12);
+      }
+      .x-promo__deco {
+        position: absolute;
+        right: -6px;
+        top: 50%;
+        transform: translateY(-52%) rotate(-12deg);
+        font-size: 120px;
+        font-weight: 800;
+        line-height: 1;
+        color: #fff;
+        opacity: 0.08;
+        pointer-events: none;
+        user-select: none;
+      }
+      .x-promo__deco > i::before { content: "%"; font-style: normal; }
+      .x-promo__deco::before {
+        content: "✦";
+        position: absolute;
+        right: 92px;
+        top: 4px;
+        font-size: 26px;
+      }
+      .x-promo__deco::after {
+        content: "✦";
+        position: absolute;
+        right: 104px;
+        bottom: 6px;
+        font-size: 16px;
+      }
+      .x-promo__icon {
+        position: relative;
+        flex: none;
+        display: grid;
+        place-items: center;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: #ffe600;
+        background-image: radial-gradient(circle at 35% 30%, #fff59a 0%, #ffe600 45%, #ffc21f 100%);
+        color: #1b2a6b;
+        box-shadow: 0 0 0 4px rgba(255, 230, 0, 0.22), 0 0 18px 4px rgba(255, 230, 0, 0.45);
+        font-size: 30px;
+        line-height: 1;
+      }
+      .x-promo__icon span {
+        display: block;
+        transform-origin: 50% 80%;
+        animation: x-gift-wiggle 4s ease-in-out infinite;
+      }
+      @keyframes x-gift-wiggle {
+        0%, 76%, 100% { transform: translateY(0) rotate(0); }
+        80% { transform: translateY(-4px) rotate(-10deg); }
+        84% { transform: translateY(-4px) rotate(10deg); }
+        88% { transform: translateY(-2px) rotate(-6deg); }
+        92% { transform: translateY(0) rotate(4deg); }
+        96% { transform: translateY(0) rotate(0); }
+      }
+      @media (prefers-reduced-motion: reduce) { .x-promo__icon span { animation: none; } }
+      .x-promo__text { position: relative; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+      .x-promo .x-promo__lead {
+        color: #fff;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 1.35;
+        text-wrap: balance;
+      }
+      .x-promo__mark {
+        display: inline-block;
+        padding: 0 8px;
+        border-radius: 999px;
+        background: #ffe600;
+        color: #1b2a6b;
+        white-space: nowrap;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+      }
+      .x-promo .x-promo__small {
+        margin-top: 0 !important;
+        color: #dbe7ff;
+        font-size: 13px;
+        line-height: 1.4;
+      }
+      @media (min-width: 768px) {
+        .x-promo { padding: 18px 24px; gap: 18px; }
+        .x-promo__icon { width: 64px; height: 64px; font-size: 34px; }
+        .x-promo .x-promo__lead { font-size: 18px; }
+        .x-promo .x-promo__small { font-size: 14px; }
+        .x-promo__deco { font-size: 150px; }
+      }
+      @media (max-width: 400px) {
+        .x-promo { padding: 12px 12px; gap: 10px; }
+        .x-promo__icon { width: 44px; height: 44px; font-size: 23px; box-shadow: 0 0 0 3px rgba(255, 230, 0, 0.22), 0 0 12px 2px rgba(255, 230, 0, 0.45); }
+        .x-promo .x-promo__lead { font-size: 15px; }
+        .x-promo__mark { padding: 0 6px; }
+        .x-promo__deco { font-size: 96px; }
+      }
+      .x-hero, .x-promo, .x-panel { margin-top: 10px; }
+      @media (min-width: 768px) { .x-hero, .x-promo, .x-panel { margin-top: 14px; } }
+
+      /* Cards: rounder, soft shadow */
+      .x-card {
+        border-radius: 10px;
+        border-color: #f0f0f0;
+        box-shadow: var(--x-card-shadow);
+      }
+      .x-card:hover { box-shadow: 0 8px 20px rgba(27, 42, 107, 0.14); }
+
+      /* ===== Layout v2: denser grid, collapsing header ===== */
+      html { overflow-anchor: none; }
+      .x-wrap { max-width: 1400px; }
+
+      /* Collapsing sticky header */
+      .x-brand {
+        max-height: 140px;
+        transition: max-height 0.25s ease, min-height 0.25s ease, padding 0.25s ease, opacity 0.2s ease 0.05s, visibility 0s linear 0s;
+      }
+      .x-top__in { transition: row-gap 0.25s ease; }
+      .x-sticky.is-collapsed .x-brand {
+        max-height: 0;
+        min-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        opacity: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: max-height 0.25s ease, min-height 0.25s ease, padding 0.25s ease, opacity 0.15s ease, visibility 0s linear 0.25s;
+      }
+      .x-sticky.is-collapsed .x-top__in { row-gap: 0; }
+      .x-sticky.is-collapsed .x-search { padding: 6px 0; }
+      .x-sticky.is-collapsed .x-search__input { height: 40px; }
+      .x-sticky.is-collapsed .x-search__clear { width: 40px; height: 40px; }
+      .x-sticky.is-collapsed .x-sugg { top: calc(100% - 2px); }
+      @media (prefers-reduced-motion: reduce) {
+        .x-brand, .x-sticky.is-collapsed .x-brand, .x-top__in { transition: none; }
+      }
+      #ofertas { scroll-margin-top: 112px; }
+
+      /* Product grid: 2 / 3 / 4 / 5 / 6 / 7 columns, wide enough for a bold price */
+      .x-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+      @media (min-width: 480px) { .x-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; } }
+      @media (min-width: 640px) { .x-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; } }
+      @media (min-width: 900px) { .x-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; } }
+      @media (min-width: 1100px) { .x-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; } }
+      @media (min-width: 1300px) { .x-grid { grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 12px; } }
+
+      .x-card .x-card__media img {
+        top: 3px; left: 3px; right: 3px; bottom: 3px;
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+      }
+      /* Old price wraps to a clipped second line when it doesn't fit */
+      .x-deal { flex-wrap: wrap; align-content: flex-start; height: 18px; min-height: 0; overflow: hidden; line-height: 18px; }
+      .x-price__old { flex: 0 1 auto; }
+      .x-btn__short { display: none; }
+
+      @media (max-width: 639px) {
+        .x-panel { padding: 6px 4px; }
+        .x-card { border-radius: 8px; }
+        .x-card__title { font-size: 13px; line-height: 1.25; min-height: 2.5em; max-height: 2.5em; }
+        .x-card__desc { display: none; }
+        .x-btn { font-size: 12px; }
+        .x-btn__long { display: none; }
+        .x-btn__short { display: inline; }
+        .x-soon { top: 4px; left: 4px; font-size: 10px; padding: 1px 4px; }
+        .x-card__emoji { font-size: 32px; }
+
+        /* Smaller hero */
+        .x-banner-wrap { padding: 8px; }
+        .x-banner { border-radius: 10px; }
+
+        /* Compact promo */
+        .x-promo { padding: 10px; gap: 10px; border-radius: 12px; }
+        .x-promo__icon { width: 36px; height: 36px; font-size: 19px; box-shadow: 0 0 0 3px rgba(255, 230, 0, 0.22), 0 0 10px 2px rgba(255, 230, 0, 0.4); }
+        .x-promo .x-promo__lead { font-size: 13px; line-height: 1.3; }
+        .x-promo .x-promo__small { font-size: 12px; line-height: 1.3; }
+        .x-promo__text { gap: 2px; }
+        .x-promo__mark { padding: 0 5px; }
+        .x-promo__deco { font-size: 80px; }
+      }
+
+      /* Feature tiles: one row of 4 small tiles on phones */
+      @media (max-width: 767px) {
+        .x-bio { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; padding: 0 8px 8px; }
+        .x-bio__tile { flex-direction: column; text-align: center; gap: 4px; padding: 6px 1px; border-radius: 10px; }
+        .x-bio__icon { width: 26px; height: 26px; font-size: 14px; box-shadow: 0 0 0 1.5px #1b2a6b, 0 1px 4px rgba(27, 42, 107, 0.2); }
+        .x-bio__head { font-size: 12px; line-height: 1.15; letter-spacing: -0.02em; overflow-wrap: anywhere; }
+        .x-bio__sub { display: none; }
+      }
+
+      /* ===== Product detail sheet ===== */
+      html.x-locked, html.x-locked body { overflow: hidden; }
+      .x-sheet { position: fixed; inset: 0; z-index: 100; display: flex; align-items: flex-end; justify-content: center; }
+      .x-sheet[hidden] { display: none; }
+      .x-sheet__backdrop { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.55); opacity: 0; transition: opacity 0.25s ease; }
+      .x-sheet.is-open .x-sheet__backdrop { opacity: 1; }
+      .x-sheet__panel {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-height: 92vh;
+        max-height: 92dvh;
+        background: #fff;
+        color: var(--x-ink);
+        border-radius: 16px 16px 0 0;
+        box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.25);
+        transform: translateY(100%);
+        transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+        outline: none;
+        overflow: hidden;
+      }
+      .x-sheet.is-open .x-sheet__panel { transform: none; }
+      .x-sheet__handle { flex: none; width: 40px; height: 5px; margin: 8px auto 0; border-radius: 3px; background: #d0d0d0; }
+      .x-sheet__x {
+        position: absolute; top: 6px; right: 6px; z-index: 3;
+        width: var(--tap); height: var(--tap);
+        display: grid; place-items: center;
+        border: 0; border-radius: 50%;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        color: var(--x-ink); font: inherit; font-size: 18px; line-height: 1; cursor: pointer;
+      }
+      .x-sheet__scroll { flex: 1 1 auto; min-height: 0; overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+      .x-sheet__media { position: relative; margin: 0; width: 100%; aspect-ratio: 1 / 1; max-height: 52vh; background: #fff; overflow: hidden; cursor: zoom-in; border-bottom: 1px solid #eee; }
+      .x-sheet__media img { width: 100%; height: 100%; object-fit: contain; display: block; transition: transform 0.25s ease; padding: 8px; box-sizing: border-box; }
+      .x-sheet__media.is-zoom { cursor: zoom-out; }
+      .x-sheet__media.is-zoom img { transform: scale(1.8); }
+      .x-sheet__info { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+      .x-sheet__badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; }
+      .x-sheet__badges:empty { display: none; }
+      .x-badge-hot { display: inline-block; padding: 3px 8px; border-radius: 3px; background: #c2410c; color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 0.02em; }
+      .x-badge-off { display: inline-block; padding: 3px 8px; border-radius: 3px; background: #e8f1fe; color: #1f53a6; font-size: 12px; font-weight: 700; }
+      .x-sheet__title { margin: 0; font-family: inherit; font-size: 17px; font-weight: 600; line-height: 1.3; color: var(--x-ink); overflow-wrap: anywhere; }
+      .x-sheet__price { display: flex; flex-direction: column; gap: 2px; }
+      .x-sheet__old { font-size: 14px; color: var(--x-muted); text-decoration: line-through; }
+      .x-sheet__nowrow { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 10px; }
+      .x-sheet__nowrow { align-items: center; }
+      .x-sheet__now { font-size: 34px; font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; color: #111111; white-space: nowrap; font-variant-numeric: tabular-nums; }
+      @media (max-width: 359px) { .x-sheet__now { font-size: 30px; } }
+      @media (min-width: 768px) { .x-sheet__now { font-size: 38px; } }
+      .x-sheet__pct { display: inline-flex; align-items: center; padding: 4px 10px; border-radius: var(--r-pill); background: var(--x-green); color: #fff; font-size: 14px; font-weight: 700; line-height: 1.1; white-space: nowrap; }
+      .x-sheet__old { font-size: 15px; color: #737373; font-variant-numeric: tabular-nums; }
+      .x-sheet__save { font-size: 15px; font-weight: 700; color: var(--x-green); }
+      .x-sheet__line { margin: 0; font-size: 15px; line-height: 1.35; }
+      .x-sheet__line.is-green { color: var(--x-green); font-weight: 600; }
+      .x-sheet__line.is-muted { color: var(--x-muted); font-size: 14px; }
+      .x-sheet__sec { margin-top: 4px; padding-top: 12px; border-top: 1px solid #eee; }
+      .x-sheet__h { margin: 0 0 8px; font-family: inherit; font-size: 16px; font-weight: 600; color: var(--x-ink); }
+      .x-sheet__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+      .x-sheet__list li { position: relative; padding-left: 26px; font-size: 14px; line-height: 1.4; }
+      .x-sheet__list li::before {
+        content: "✓"; position: absolute; left: 0; top: 1px;
+        width: 18px; height: 18px; border-radius: 50%;
+        display: grid; place-items: center;
+        background: #e6f4ec; color: var(--x-green); font-size: 12px; font-weight: 700;
+      }
+      .x-sheet__fine { margin: 8px 0 0; font-size: 12px; line-height: 1.4; color: #595959; }
+      .x-rel { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 6px; scroll-snap-type: x proximity; scrollbar-width: thin; }
+      .x-rel__item {
+        flex: 0 0 116px; scroll-snap-align: start;
+        display: flex; flex-direction: column; gap: 4px;
+        padding: 6px; border: 1px solid #eee; border-radius: 8px;
+        background: #fff; color: var(--x-ink); font: inherit; text-align: left; cursor: pointer;
+      }
+      .x-rel__item:hover { border-color: var(--x-blue); }
+      .x-rel__item img { width: 100%; aspect-ratio: 1 / 1; object-fit: contain; display: block; }
+      .x-rel__price { font-size: 15px; font-weight: 800; color: #111111; white-space: nowrap; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+      .x-rel__off { color: var(--x-green); font-size: 12px; font-weight: 700; margin-left: 4px; }
+      .x-rel__title { font-size: 12px; line-height: 1.25; color: #595959; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+      .x-sheet__foot {
+        flex: none;
+        display: flex; flex-direction: column; gap: 2px;
+        padding: 10px 16px calc(8px + env(safe-area-inset-bottom));
+        background: #fff;
+        border-top: 1px solid #eee;
+        box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.06);
+      }
+      .x-sheet__cta {
+        display: flex; align-items: center; justify-content: center;
+        min-height: 48px; padding: 0 16px;
+        border-radius: 6px; background: #3483fa; color: #fff;
+        font-size: 16px; font-weight: 700; text-align: center; text-decoration: none;
+      }
+      .x-sheet__cta:hover { background: #2968c8; }
+      .x-sheet__back { min-height: var(--tap); border: 0; background: none; color: #3483fa; font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; border-radius: 6px; }
+      .x-sheet__back:hover { background: rgba(52, 131, 250, 0.08); }
+      .x-sheet__x:focus-visible, .x-sheet__cta:focus-visible, .x-sheet__back:focus-visible, .x-rel__item:focus-visible, .x-sheet__media:focus-visible { outline: 2px solid #1f53a6; outline-offset: 2px; }
+      @media (min-width: 768px) {
+        .x-sheet { align-items: center; padding: 24px; }
+        .x-sheet__panel {
+          width: min(760px, 100%);
+          max-height: min(88vh, 720px);
+          border-radius: 12px;
+          transform: translateY(16px) scale(0.98);
+          opacity: 0;
+          transition: transform 0.25s ease, opacity 0.2s ease;
+        }
+        .x-sheet.is-open .x-sheet__panel { transform: none; opacity: 1; }
+        .x-sheet__handle { display: none; }
+        .x-sheet__scroll { display: grid; grid-template-columns: 320px minmax(0, 1fr); align-items: start; }
+        .x-sheet__media { position: sticky; top: 0; max-height: none; border-bottom: 0; border-right: 1px solid #eee; }
+        .x-sheet__media img { padding: 20px; }
+        .x-sheet__info { padding: 20px 24px 20px 20px; }
+        .x-sheet__title { padding-right: 36px; }
+        .x-sheet__foot { flex-direction: row; align-items: center; gap: 12px; padding: 12px 24px 12px 340px; }
+        .x-sheet__cta { flex: 1; }
+        .x-sheet__back { padding: 0 12px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .x-sheet__backdrop, .x-sheet__panel, .x-sheet__media img { transition: none; }
+      }
+
+      /* ===== Card polish v3: prices that stand out ===== */
+      .x-card {
+        border: 1px solid #e6e6e6;
+        border-radius: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(27, 42, 107, 0.06);
+        transition: box-shadow var(--dur-quick) var(--ease-out), transform var(--dur-quick) var(--ease-out), border-color var(--dur-quick) var(--ease-out);
+      }
+      .x-card:hover { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(27, 42, 107, 0.06); }
+      @media (hover: hover) and (min-width: 768px) {
+        .x-card:hover { transform: translateY(-3px); border-color: #d6d6d6; box-shadow: 0 10px 24px rgba(27, 42, 107, 0.14); }
+      }
+      @media (prefers-reduced-motion: reduce) { .x-card, .x-card:hover { transition: none; transform: none; } }
+      .x-card .x-card__media { border-bottom: 1px solid #f0f0f0; }
+      .x-card .x-card__media img {
+        top: 8px; left: 8px; right: 8px; bottom: 8px;
+        width: calc(100% - 16px);
+        height: calc(100% - 16px);
+      }
+      .x-card__body {
+        container-type: inline-size;
+        padding: 10px 10px 12px;
+        gap: 4px;
+      }
+      @media (max-width: 639px) { .x-card__body { padding: 8px 8px 10px; gap: 3px; } }
+      .x-card__title { min-height: 2.6em; max-height: 2.6em; }
+      /* Price block sits at the bottom so price and button line up across a row */
+      .x-card__desc + .x-deal, .x-card__desc + .x-price__now { margin-top: auto; }
+      .x-card__body .x-btn { margin-top: 6px; }
+      .x-card__desc + .x-btn { margin-top: auto; }
+      /* Deal line: green pill + struck-through old price; the old price drops to a clipped line when tight */
+      .x-deal {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: flex-start;
+        gap: 0 6px;
+        height: 20px;
+        min-height: 0;
+        line-height: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0;
+      }
+      .x-off {
+        flex: none;
+        display: inline-flex;
+        align-items: center;
+        height: 18px;
+        padding: 0 7px;
+        border-radius: var(--r-pill);
+        background: var(--x-green);
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+      .x-price__old {
+        flex: 0 0 auto;
+        overflow: visible;
+        font-size: 12px;
+        line-height: 20px;
+        color: #737373;
+        text-decoration: line-through;
+        font-variant-numeric: tabular-nums;
+      }
+      .x-price__now {
+        margin: 0;
+        font-weight: 800;
+        font-size: 20px;
+        font-size: min(24px, 14.5cqi);
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        color: #111111;
+        white-space: nowrap;
+        overflow: visible;
+        text-overflow: clip;
+        font-variant-numeric: tabular-nums;
+      }
+      /* ===== v4: 3 per row on phones, prices sized to the card ===== */
+      .x-price__now { font-size: min(24px, 19cqi); }
+      .x-price__now.is-long { font-size: min(24px, 16cqi); }
+      .x-price__now.is-xlong { font-size: min(24px, 14cqi); }
+      @media (max-width: 479px) {
+        .x-panel { padding: 6px 2px; }
+        .x-card { border-radius: 8px; }
+        .x-card .x-card__media img { top: 4px; left: 4px; right: 4px; bottom: 4px; width: calc(100% - 8px); height: calc(100% - 8px); }
+        .x-card__body { padding: 6px 5px 7px; gap: 2px; }
+        .x-card__title { font-size: 12px; line-height: 1.25; min-height: 2.5em; max-height: 2.5em; }
+        .x-deal { height: auto; overflow: visible; row-gap: 2px; gap: 2px 4px; line-height: 16px; }
+        .x-price__old { order: -1; flex-basis: 100%; line-height: 16px; }
+        .x-off { height: 16px; padding: 0 5px; }
+        .x-price__now { letter-spacing: -0.03em; line-height: 1.2; }
+        .x-card__body .x-btn { margin-top: 4px; font-size: 12px; padding: 0; }
+      }
+
+      /* Subcategory chips: second, quieter row under the categories */
+      .x-subfilters {
+        display: flex;
+        gap: 6px;
+        overflow-x: auto;
+        padding: 0 0 6px;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+      }
+      .x-subfilters[hidden] { display: none; }
+      .x-subfilters::-webkit-scrollbar { display: none; }
+      .x-subchip {
+        position: relative;
+        flex: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        min-height: var(--tap);
+        margin: 0;
+        padding: 0 12px;
+        border-radius: var(--r-pill);
+        border: 1px solid var(--x-line);
+        background: transparent;
+        color: var(--x-ink);
+        font: inherit;
+        font-size: 12px;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: background var(--dur-quick) var(--ease-out), color var(--dur-quick) var(--ease-out), border-color var(--dur-quick) var(--ease-out);
+      }
+      .x-subchip:hover { color: var(--x-blue); }
+      .x-subchip__n { color: #595959; font-variant-numeric: tabular-nums; }
+      .x-subchip[aria-pressed="true"] { background: #e8f1fe; border-color: var(--x-blue); color: #1f53a6; font-weight: 600; }
+      .x-subchip[aria-pressed="true"] .x-subchip__n { color: #1f53a6; font-weight: 400; }
+      .x-store:has(#subs:not([hidden])) #ofertas { scroll-margin-top: 156px; }
+      @media (max-width: 767px) { .x-store:has(#subs:not([hidden])) #ofertas { scroll-margin-top: 222px; } }
+      .x-subchip:focus-visible { outline: 2px solid var(--x-blue); outline-offset: 2px; }
+      .x-rel__item { flex-basis: 128px; }
+      .x-rel__price { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 4px; }
+      .x-rel__off { margin-left: 0; }
+      /* ===== Share link: card icon, sheet block, toast, manual-copy popover ===== */
+      .x-card__actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+        min-width: 0;
+        margin-top: 6px;
+      }
+      .x-card__desc + .x-card__actions { margin-top: auto; }
+      .x-card__body .x-card__actions .x-btn { margin-top: 0; min-width: 0; flex: 0 1 auto; padding: 0; }
+      .x-share {
+        position: relative;
+        flex: none;
+        display: inline-grid;
+        place-items: center;
+        width: var(--tap);
+        height: var(--tap);
+        margin: -7px -6px -7px 0;
+        border-radius: 50%;
+        background: none;
+        color: #1f53a6;
+        cursor: pointer;
+      }
+      .x-share::before {
+        content: "";
+        position: absolute;
+        top: 50%; left: 50%;
+        width: 30px; height: 30px;
+        margin: -15px 0 0 -15px;
+        border-radius: 50%;
+        background: #e8f1fe;
+        transition: background var(--dur-quick) var(--ease-out);
+      }
+      .x-share svg { position: relative; width: 16px; height: 16px; display: block; }
+      .x-share:hover::before { background: #d6e4f8; }
+      .x-share:focus-visible { outline: 2px solid #1f53a6; outline-offset: 2px; }
+      @container (max-width: 184px) {
+        .x-card__actions .x-btn__long { display: none; }
+        .x-card__actions .x-btn__short { display: inline; }
+      }
+      @media (max-width: 479px) {
+        .x-card__actions { margin-top: 4px; gap: 2px; }
+        .x-share { margin: -9px -5px -7px 0; }
+        .x-share::before { width: 26px; height: 26px; margin: -13px 0 0 -13px; }
+        .x-share svg { width: 14px; height: 14px; }
+      }
+      .x-sheet__share { display: flex; flex-direction: column; gap: 8px; margin: 2px 0 0; }
+      .x-sheet__sharebtn {
+        display: flex; align-items: center; justify-content: center; gap: 8px;
+        width: 100%; min-height: var(--tap); padding: 0 16px;
+        border: 1px solid #3483fa; border-radius: 6px;
+        background: #e8f1fe; color: #1f53a6;
+        font: inherit; font-size: 15px; font-weight: 700; cursor: pointer;
+      }
+      .x-sheet__sharebtn svg { width: 18px; height: 18px; flex: none; }
+      .x-sheet__sharebtn:hover { background: #d6e4f8; }
+      .x-linkfield { display: flex; gap: 6px; min-width: 0; }
+      .x-linkfield__input {
+        flex: 1 1 auto; min-width: 0; height: var(--tap); margin: 0; padding: 0 10px;
+        border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 6px;
+        background: #f5f5f5; color: #333333;
+        font: inherit; font-size: 16px; text-overflow: ellipsis;
+      }
+      .x-linkfield__input:focus { outline: 2px solid #3483fa; outline-offset: 0; background: #fff; }
+      .x-linkfield__btn {
+        flex: none; min-height: var(--tap); padding: 0 16px;
+        border: 0; border-radius: 6px; background: #3483fa; color: #fff;
+        font: inherit; font-size: 15px; font-weight: 700; cursor: pointer;
+      }
+      .x-linkfield__btn:hover { background: #2968c8; }
+      .x-sheet__sharebtn:focus-visible, .x-linkfield__btn:focus-visible, .x-pop__close:focus-visible { outline: 2px solid #1f53a6; outline-offset: 2px; }
+      .x-toast {
+        position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom)); z-index: 300;
+        max-width: calc(100vw - 32px); padding: 10px 18px;
+        border-radius: 999px; background: #1b2a6b; color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 15px; font-weight: 700; line-height: 1.3; text-align: center;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        opacity: 0; transform: translate(-50%, 12px); pointer-events: none;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+      }
+      .x-toast.is-on { opacity: 1; transform: translate(-50%, 0); }
+      .x-pop {
+        position: fixed; inset: 0; z-index: 250;
+        display: flex; align-items: center; justify-content: center; padding: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        color: #333333;
+      }
+      .x-pop[hidden] { display: none; }
+      .x-pop__backdrop { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.5); }
+      .x-pop__panel {
+        position: relative; width: min(420px, 100%);
+        display: flex; flex-direction: column; gap: 10px;
+        padding: 16px; border-radius: 12px; background: #fff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+      .x-pop__title { margin: 0; font-size: 16px; font-weight: 700; }
+      .x-pop__hint { margin: 0; font-size: 13px; line-height: 1.4; color: #595959; }
+      .x-pop__close {
+        align-self: flex-end; min-height: var(--tap); padding: 0 12px;
+        border: 0; border-radius: 6px; background: none; color: #3483fa;
+        font: inherit; font-size: 15px; font-weight: 600; cursor: pointer;
+      }
+      @media (prefers-reduced-motion: reduce) { .x-toast { transition: none; } }
+    </style>
+  </head>
+  <body>
+    <div class="page x-store" id="top">
+      <div class="x-sticky">
+        <header class="x-top">
+          <div class="x-wrap x-top__in">
+            <div class="x-brand">
+              <a class="x-logo" href="#top" aria-label="Ofertas Meli ARG, inicio">
+                <img class="x-avatar" src="meli_avatar4.png" alt="" />
+                <div class="x-brandtext">
+                  <h1 class="x-name"><span class="x-name__word">Ofertas Meli</span> <span class="x-arg"><span aria-hidden="true">🇦🇷</span>ARG</span></h1>
+                  <div class="x-subline">
+                    <p class="x-tagline">Descuentos exclusivos todos los días 🔥</p>
+                    <span class="x-verified"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#3483FA"/><path d="M4.6 8.3l2.2 2.2 4.6-4.8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Afiliado oficial de Mercado Libre ARG</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <form class="x-search" role="search" action="#" onsubmit="return false">
+              <div class="x-search__box">
+                <svg class="x-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+                <input class="x-search__input" id="q" type="search" placeholder="Buscá productos, marcas o categorías…" aria-label="Buscar productos" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" />
+                <button class="x-search__clear" id="q-clear" type="button" aria-label="Borrar búsqueda" hidden>✕</button>
+              </div>
+              <div class="x-sugg" id="q-sugg" hidden>
+                <p class="x-sugg__label">Búsquedas populares</p>
+                <div class="x-sugg__list">
+                  <button class="x-sugg__btn" type="button">Auriculares</button>
+                  <button class="x-sugg__btn" type="button">Taladro</button>
+                  <button class="x-sugg__btn" type="button">Freidora</button>
+                  <button class="x-sugg__btn" type="button">Zapatillas</button>
+                  <button class="x-sugg__btn" type="button">Celular</button>
+                  <button class="x-sugg__btn" type="button">Smartwatch</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </header>
+        <div class="x-filterbar">
+          <div class="x-wrap x-filters" role="group" aria-label="Filtrar por categoría">
+            <button class="x-chip" type="button" data-cat="Todos" aria-pressed="true">Todos</button>
+            <button class="x-chip" type="button" data-cat="Tecnología" aria-pressed="false">Tecnología</button>
+            <button class="x-chip" type="button" data-cat="Salud y belleza" aria-pressed="false">Salud y belleza</button>
+            <button class="x-chip" type="button" data-cat="Hogar" aria-pressed="false">Hogar</button>
+            <button class="x-chip" type="button" data-cat="Deportes" aria-pressed="false">Deportes</button>
+            <button class="x-chip" type="button" data-cat="Mascotas" aria-pressed="false">Mascotas</button>
+            <button class="x-chip" type="button" data-cat="Autos" aria-pressed="false">Autos</button>
+            <button class="x-chip" type="button" data-cat="Herramientas" aria-pressed="false">Herramientas</button>
+            <button class="x-chip" type="button" data-cat="Moda" aria-pressed="false">Moda</button>
+            <button class="x-chip" type="button" data-cat="Bebés" aria-pressed="false">Bebés</button>
+            <button class="x-chip" type="button" data-cat="Juguetes" aria-pressed="false">Juguetes</button>
+            <button class="x-chip" type="button" data-cat="Almacén" aria-pressed="false">Almacén</button>
+          </div>
+          <div class="x-wrap x-subfilters" id="subs" role="group" aria-label="Filtrar por subcategoría" hidden></div>
+        </div>
+      </div>
+      <main class="x-wrap">
+        <section class="x-hero" aria-label="Ofertas Meli ARG">
+          <div class="x-banner-wrap"><img class="x-banner" src="meli_banner4_x.png" alt="Banner de Ofertas Meli ARG" width="1500" height="500" /></div>
+          <ul class="x-bio">
+            <li class="x-bio__tile"><span class="x-bio__icon" aria-hidden="true">🛒</span><span class="x-bio__text"><strong class="x-bio__head">Las mejores ofertas</strong><span class="x-bio__sub">Seleccionadas de Mercado Libre</span></span></li>
+            <li class="x-bio__tile"><span class="x-bio__icon" aria-hidden="true">💸</span><span class="x-bio__text"><strong class="x-bio__head">Descuentos reales</strong><span class="x-bio__sub">Productos en tendencia</span></span></li>
+            <li class="x-bio__tile"><span class="x-bio__icon" aria-hidden="true">🔗</span><span class="x-bio__text"><strong class="x-bio__head">DESCUENTO extra</strong><span class="x-bio__sub">Mis links abren la app oficial 🇦🇷</span></span></li>
+            <li class="x-bio__tile"><span class="x-bio__icon" aria-hidden="true">📈</span><span class="x-bio__text"><strong class="x-bio__head">En tendencia</strong><span class="x-bio__sub">Precios en oferta actualizados en tiempo real</span></span></li>
+          </ul>
+        </section>
+
+        <aside class="x-promo" aria-label="Descuento adicional">
+          <span class="x-promo__deco" aria-hidden="true"><i></i></span>
+          <span class="x-promo__icon" aria-hidden="true"><span>🎁</span></span>
+          <div class="x-promo__text">
+            <p class="x-promo__lead">¡Usando mis links obtenés un <span class="x-promo__mark">DESCUENTO ADICIONAL</span>!</p>
+            <p class="x-promo__small">Te llevan directo a la app oficial de Mercado Libre, con el descuento aplicado ✅</p>
+          </div>
+        </aside>
+
+        <section class="x-panel" id="ofertas" aria-labelledby="ofertas-title">
+          <div class="x-panel__head">
+            <h2 class="x-title" id="ofertas-title">Ofertas destacadas 🔥</h2>
+            <label class="x-sort" for="sort">Ordenar por
+              <span class="x-sort__wrap">
+                <select id="sort">
+                  <option value="rel" selected>Relevancia</option>
+                  <option value="asc">Menor precio</option>
+                  <option value="desc">Mayor precio</option>
+                  <option value="off">Mayor descuento</option>
+                </select>
+              </span>
+            </label>
+            <p class="x-note x-count" id="q-count" aria-live="polite" hidden></p>
+          </div>
+          <div class="x-grid" id="grid" aria-live="polite"></div>
+          <div class="x-more-wrap"><button class="x-more" type="button" id="more" hidden>Ver más ofertas</button></div>
+        </section>
+
+        <ul class="x-trust" aria-label="Por qué usar mis links">
+          <li><span aria-hidden="true">🚚</span>Envíos rápidos</li>
+          <li><span aria-hidden="true">🛡️</span>Compra protegida</li>
+          <li><span aria-hidden="true">🏷️</span>Descuentos reales</li>
+          <li><span aria-hidden="true">❤️</span>Para todos</li>
+        </ul>
+
+        <footer class="x-foot">
+          <a class="x-follow" href="https://x.com" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            ¡Seguime en X para más ofertas!
+          </a>
+          <p class="x-disclaimer">Contiene links de afiliado. Precios y promociones sujetos a cambios en Mercado Libre.</p>
+          <a class="badge" href="https://hark.com/" target="_blank" rel="noopener"><span class="hark-mark"></span><span>built by hark</span></a>
+        </footer>
+      </main>
+      <button class="x-totop" type="button" aria-label="Volver arriba" hidden>↑</button>
+      <div class="x-sheet" id="sheet" hidden>
+        <div class="x-sheet__backdrop" data-close></div>
+        <div class="x-sheet__panel" role="dialog" aria-modal="true" aria-labelledby="sh-title" tabindex="-1">
+          <div class="x-sheet__handle" aria-hidden="true"></div>
+          <button class="x-sheet__x" type="button" aria-label="Cerrar" data-close>✕</button>
+          <div class="x-sheet__scroll" id="sh-body"></div>
+          <div class="x-sheet__foot">
+            <a class="x-sheet__cta" id="sh-cta" href="#" target="_blank" rel="noopener">Terminar la compra en Mercado Libre</a>
+            <button class="x-sheet__back" type="button" data-close>Seguir viendo ofertas</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="x-pop" id="share-pop" hidden>
+      <div class="x-pop__backdrop" data-pop-close></div>
+      <div class="x-pop__panel" role="dialog" aria-modal="true" aria-labelledby="pop-title">
+        <p class="x-pop__title" id="pop-title">Copiá el link del producto</p>
+        <div class="x-linkfield">
+          <input class="x-linkfield__input" id="pop-input" type="text" readonly aria-label="Link del producto" />
+          <button class="x-linkfield__btn" type="button" id="pop-copy">Copiar</button>
+        </div>
+        <p class="x-pop__hint">Si no se copia solo, mantené presionado el link y elegí “Copiar”.</p>
+        <button class="x-pop__close" type="button" data-pop-close>Cerrar</button>
+      </div>
+    </div>
+    <div class="x-toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="hark.js"></script>
+    <script>
+      let PRODUCTS = [], DETAILS = {};
+      function startApp() {
+
+/* Genera "Detalles destacados" a partir del título, categoría y datos del producto (sin inventar specs). */
+function aiDetails(p, d) {
+  const t = String(p.title || "");
+  const low = t.toLowerCase();
+  const out = [];
+  const add = (s) => { if (s && !out.includes(s) && out.length < 5) out.push(s); };
+
+  const pz = t.match(/(\d+)\s*(?:pz|pzs|piezas|pcs|unidades|u\.)\b/i) || t.match(/\bx\s?(\d+)\b/i);
+  if (pz && +pz[1] > 1 && +pz[1] < 500) add(`Incluye ${pz[1]} piezas/unidades en el set.`);
+  const cap = t.match(/(\d+(?:[.,]\d+)?)\s*(l|lts?|litros|ml|cc)\b/i);
+  if (cap) add(`Capacidad de ${cap[1]} ${/ml|cc/i.test(cap[2]) ? cap[2].toLowerCase() : "litros"}.`);
+  const dim = t.match(/(\d+(?:[.,]\d+)?)\s*x\s*(\d+(?:[.,]\d+)?)(?:\s*x\s*(\d+(?:[.,]\d+)?))?\s*(cm|mm|m)?/i);
+  if (dim) add(`Medidas: ${dim[0].replace(/\s+/g, "")}${dim[4] ? "" : " (según publicación)"}.`);
+  const cm = !dim && t.match(/(\d+(?:[.,]\d+)?)\s*(cm|mm|pulgadas|")/i);
+  if (cm) add(`Tamaño: ${cm[1]} ${cm[2] === '"' ? "pulgadas" : cm[2]}.`);
+  const w = t.match(/(\d+)\s*(w|watts?)\b/i);
+  if (w) add(`Potencia de ${w[1]} W.`);
+  const gb = t.match(/(\d+)\s*(gb|tb)\b/i);
+  if (gb) add(`Almacenamiento/memoria de ${gb[1]} ${gb[2].toUpperCase()}.`);
+  const mah = t.match(/(\d+)\s*mah/i);
+  if (mah) add(`Batería de ${mah[1]} mAh.`);
+
+  const mats = ["acero inoxidable", "aluminio", "hierro fundido", "hierro", "vidrio", "bambú", "bambu", "madera", "silicona", "cerámica", "ceramica", "granito", "cuero", "algodón", "plástico", "titanio", "carbono"];
+  const found = mats.filter((m) => low.includes(m)).slice(0, 2);
+  const coat = found.filter((m) => /granito|cerámica|ceramica/.test(m));
+  const body = found.filter((m) => !coat.includes(m));
+  if (body.length) add(`Fabricado en ${body.join(" y ")}.`);
+  if (coat.length) add(`Recubrimiento tipo ${coat[0]}.`);
+
+  const feats = {
+    antiadherente: "Superficie antiadherente: cocina con menos aceite y limpieza fácil.",
+    "inducción": "Apto para cocinas a inducción.", induccion: "Apto para cocinas a inducción.",
+    "hermétic": "Cierre hermético que conserva mejor los alimentos.", hermetic: "Cierre hermético que conserva mejor los alimentos.",
+    microondas: "Apto microondas.", freezer: "Apto freezer.", horno: "Apto horno.",
+    recargable: "Recargable, sin pilas descartables.", inalámbric: "Inalámbrico, más libertad de uso.", inalambric: "Inalámbrico, más libertad de uso.",
+    bluetooth: "Conexión Bluetooth.", plegable: "Plegable: ocupa poco lugar al guardarlo.", extensible: "Extensible, se adapta a tu espacio.",
+    impermeable: "Resistente al agua.", "usb": "Carga/conexión USB.", "led": "Iluminación LED.", digital: "Pantalla/funcionamiento digital.",
+    "automátic": "Funcionamiento automático.", automatic: "Funcionamiento automático.", "sensor": "Con sensor.", profesional: "Calidad profesional.",
+    giratorio: "Diseño giratorio para acceso rápido.", "triple fondo": "Triple fondo: distribuye mejor el calor.",
+  };
+  for (const k in feats) if (new RegExp("(^|[^a-záéíóúñ])" + k).test(low)) add(feats[k]);
+
+  const cat = {
+    "Hogar": "Ideal para equipar y ordenar tu casa.",
+    "Tecnología": "Tecnología a buen precio para el día a día.",
+    "Salud y belleza": "Para tu cuidado personal todos los días.",
+    "Deportes": "Pensado para entrenar y moverte más.",
+    "Autos": "Para tu auto o moto, con calidad confiable.",
+    "Herramientas": "Rinde en trabajos de casa y de taller.",
+    "Moda": "Estilo y comodidad para todos los días.",
+    "Bebés": "Pensado para el cuidado y comodidad del bebé.",
+    "Mascotas": "Para el bienestar de tu mascota.",
+    "Juguetes": "Para jugar y divertirse en familia.",
+    "Almacén": "Para tener la alacena siempre surtida.",
+  };
+  if (out.length < 3 && cat[p.category]) add(cat[p.category]);
+  if (d && d.v && d.v[1]) add(`Vendido por tienda oficial${d.v[0] ? " (" + d.v[0].replace(/^Por\s+/i, "") + ")" : ""}.`);
+  if (d && d.h === "MÁS VENDIDO") add("Uno de los más vendidos en Mercado Libre.");
+  if (p.discount >= 30) add(`Rebaja fuerte: ${p.discount}% menos que su precio anterior.`);
+  return out;
+}
+
+      /* ===================================================================== */
+
+// Subcategory rules: first matching regex (tested on the lowercased title) wins; no match = "Otros".
+const SUBCATS = {
+  "Tecnología": [
+    ["Celulares", /^(apple )?iphone|celular|smartphone|^samsung galaxy [asmz]|^samsung [as]\d|^xiaomi (redmi|poco|1\d)|^motorola|^moto |^oppo|^zte|^tcl|^oukitel|^combo (zte|xiaomi|samsung|motorola)|galaxy s2|^a18 pro/i],
+    ["Fundas y protectores", /funda|vidrio|templado|protector|glass|case /i],
+    ["Audio", /auricular|parlante|headset|airpods|buds|barra de sonido|soundbar|micr[oó]fono/i],
+    ["Cargadores y cables", /cargador|cable|power ?bank|adaptador|hub usb|fuente/i],
+    ["Computación", /notebook|laptop|monitor|teclado|mouse|tablet|ipad|pc |impresora|tinta|cartucho|disco|ssd|pendrive|memoria|router|placa|m[oó]dulo|webcam/i],
+    ["TV y video", /smart tv|televisor|tv box|chromecast|fire stick|proyector|control remoto|^control|soporte.*tv|tv /i],
+    ["Smartwatch", /smartwatch|reloj|smart ?band|watch/i],
+    ["Gaming", /joystick|consola|ps5|ps4|playstation|xbox|nintendo|gamer|gaming/i],
+    ["Smart home y seguridad", /c[aá]mara|enchufe|sensor|extensor|wifi|alarma|timbre|roku|streaming/i],
+  ],
+  "Hogar": [
+    ["Cafeteras y pavas", /cafetera|pava|espumador|molinillo|c[aá]psula/i],
+    ["Climatización", /aire acondicionado|^aire |ventilador|estufa|caloventor|calefactor|panel calefactor|split/i],
+    ["Electrodomésticos", /lavarropas|heladera|freezer|microondas|horno|freidora|batidora|licuadora|procesadora|aspiradora|yogurtera|tostadora|minipimer|secarropas|lavavajillas|anafe|exprimidor|sandwichera|waflera|m[aá]quina/i],
+    ["Cocina y vajilla", /olla|sart[eé]n|bater[ií]a de cocina|bateria|cuchill|vaso|taza|plato|cubierto|tabla|escurridor|termo|mate|bowl|fuente|recipiente|tupper|hermetic|set de cocina|jarra|botella|vajilla/i],
+    ["Dormitorio y textiles", /colch[oó]n|almohada|acolchado|s[aá]bana|frazada|cubrecama|toalla|cortina|edred[oó]n|sommier|alfombra/i],
+    ["Organización y limpieza", /cesto|organizador|perchero|estante|caja|zapatero|canasto|limpieza|mopa|escoba|tender|secaplatos/i],
+    ["Iluminación", /luz|luces|l[aá]mpara|led|foco|velador/i],
+    ["Muebles y baño", /mesa|silla|sill[oó]n|grifo|vanitory|espejo|ba[ñn]o|inodoro|mueble|rack|escritorio|placard/i],
+  ],
+  "Moda": [
+    ["Zapatillas y calzado", /zapatilla|botin|bot[aí]n|sandalia|ojota|calzado|zapato|pantufla|borcego|crocs/i],
+    ["Mochilas, bolsos y carteras", /mochila|morral|bolso|cartera|bandolera|valija|ri[ñn]onera|billetera|neceser/i],
+    ["Remeras y chombas", /remera|chomba|musculosa|camiseta|camisa|top /i],
+    ["Pantalones y jeans", /jean|pantal[oó]n|jogging|bermuda|short|calza/i],
+    ["Abrigos y buzos", /buzo|campera|sweater|chaleco|parka|hoodie|polar/i],
+    ["Ropa interior y medias", /medias|bombacha|corpi[ñn]o|boxer|calz[oó]n|slip/i],
+    ["Accesorios", /reloj|cintur[oó]n|guantes|gorra|lentes|anteojos|bufanda|cuello/i],
+  ],
+  "Autos": [
+    ["Neumáticos", /neum[aá]tico|cubierta|llanta/i],
+    ["Baterías", /bater[ií]a/i],
+    ["Motor y refrigeración", /radiador|bomba|correa|distribuci[oó]n|embrague|junta|carburador|tensor|aceite|filtro|buj[ií]a|termostato|kit de|kit/i],
+    ["Suspensión y dirección", /amortiguador|cremallera|parrilla|r[oó]tula|extremo|bieleta|buje|espiral|precap/i],
+    ["Iluminación", /faro|[oó]ptica|led|l[aá]mpara|luz/i],
+    ["Accesorios", /cubre|funda|soporte|deflector|alfombra|compresor|crique|burro|tapa|stereo|est[eé]reo|c[aá]mara/i],
+    ["Herramientas y emergencia", /inflador|scanner|matafuego|cono|caballete|linga|pulidora|aspiradora|cargador|arrancador/i],
+  ],
+  "Salud y belleza": [
+    ["Perfumes", /perfume|eau de|colonia|fragancia|body splash/i],
+    ["Cabello", /planchita|secador|buclera|cepillo|rizador|alisad|shampoo|acondicionador|tintura|cortapelo|m[aá]quina de cortar/i],
+    ["Cuidado de la piel", /s[eé]rum|crema|m[aá]scara|protector solar|jab[oó]n|gel|limpiador|t[oó]nico|hidratante|skin/i],
+    ["Suplementos", /prote[ií]na|creatina|whey|col[aá]geno|vitamina|suplemento|magnesio|omega/i],
+    ["Salud", /nebulizador|tensi[oó]metro|ox[ií]metro|term[oó]metro|tiras|gluc|balanza|irrigador|masajeador|medias/i],
+    ["Afeitado y depilación", /afeitadora|depiladora|rasuradora|trimmer|barba/i],
+    ["Maquillaje", /base|labial|m[aá]scara de pesta|sombra|delineador|maquillaje|esmalte|u[ñn]as/i],
+  ],
+  "Deportes": [
+    ["Bicicletas y ciclismo", /bicicleta|bici|casco|monopat[ií]n|luces/i],
+    ["Fútbol", /botin|bot[ií]n|pelota|arco|camiseta/i],
+    ["Fitness", /mancuerna|pesa|barra|banco|banda|cinta|multigimnasio|bolsa|guantes|colchoneta|yoga|el[ií]ptico|disco|kettlebell/i],
+    ["Camping y outdoor", /carpa|camping|anafe|bolsa de dormir|linterna|antiparra|ski/i],
+  ],
+  "Almacén": [
+    ["Alfajores", /alfa|merengo|vento|cabo|tapas|guaymall/i],
+  ],
+  "Herramientas": [
+    ["Herramientas eléctricas", /taladro|sierra|lijadora|rotomartillo|amoladora|atornillador|pistola|termofusora|soldad|caladora|ingleteadora|compresor|motor|hidrolavadora|bater[ií]a/i],
+    ["Jardín y bombas", /desmalezadora|cortadora|bordeadora|motosierra|bomba|manguera|jard[ií]n|hormigonera/i],
+    ["Pintura", /pintura|l[aá]tex|rodillo|pincel|esmalte/i],
+    ["Escaleras y carga", /escalera|carro|aparejo|zorra|cami[oó]n|malacate/i],
+  ],
+  "Bebés": [
+    ["Paseo y seguridad", /silla|booster|cochecito|butaca|corralito|baby ?call|monitor|mochila|fular/i],
+    ["Alimentación y lactancia", /extractor|mamadera|esterilizador|calienta|lactancia|chupete/i],
+    ["Dormitorio y juego", /cuna|cunero|m[oó]vil|almohada|torre|juguete|disfraz|cuatriciclo/i],
+  ],
+};
+function subcatOf(p){const t=(p.title||'').toLowerCase();for(const [n,rx] of (SUBCATS[p.category]||[])){if(rx.test(t))return n;}return 'Otros';}
+
+      (function () {
+        const grid = document.getElementById("grid");
+        const chips = document.querySelectorAll(".x-chip");
+        const money = (n) => "$ " + Number(n).toLocaleString("es-AR");
+        const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+        const SHARE_SVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>`;
+        const BATCH = 32;
+        const more = document.getElementById("more");
+        let list = PRODUCTS;
+        let rendered = 0;
+
+        /* ---- Búsqueda ---- */
+        const norm = (s) => String(s ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+        const variants = (w) => {
+          const v = [w];
+          if (w.length > 4 && w.endsWith("ces")) v.push(w.slice(0, -3) + "z");
+          if (w.length > 4 && /[rldnjy]es$/.test(w)) v.push(w.slice(0, -2));
+          if (w.length > 3 && w.endsWith("s")) v.push(w.slice(0, -1));
+          return v;
+        };
+        const INDEX = PRODUCTS.map((p) => ({ p, t: norm(p.title), d: norm(p.desc), c: norm(p.category), s: subcatOf(p), off: Number(p.discount) || 0 }));
+        let cat = "Todos";
+        let sub = "Todas";
+
+        /* ---- Subcategorías ---- */
+        const SUBCOUNT = {};
+        INDEX.forEach((e) => {
+          const m = SUBCOUNT[e.p.category] || (SUBCOUNT[e.p.category] = {});
+          m[e.s] = (m[e.s] || 0) + 1;
+        });
+        const subsEl = document.getElementById("subs");
+        const renderSubs = () => {
+          const m = SUBCOUNT[cat];
+          const named = m ? Object.keys(m).filter((k) => k !== "Otros").sort((a, b) => m[b] - m[a]) : [];
+          if (cat === "Todos" || !named.length) {
+            subsEl.hidden = true;
+            subsEl.innerHTML = "";
+            return;
+          }
+          const total = Object.values(m).reduce((a, b) => a + b, 0);
+          const names = m.Otros ? [...named, "Otros"] : named;
+          const btn = (name, n) =>
+            `<button class="x-subchip" type="button" data-sub="${esc(name)}" aria-pressed="${name === sub}">${esc(name)} <span class="x-subchip__n">${n.toLocaleString("es-AR")}</span></button>`;
+          subsEl.innerHTML = btn("Todas", total) + names.map((k) => btn(k, m[k])).join("");
+          subsEl.scrollLeft = 0;
+          subsEl.hidden = false;
+        };
+        let query = "";
+        let terms = [];
+        const has = (s, vs) => vs.some((v) => s.includes(v));
+
+        const hl = (title) => {
+          const s = String(title ?? "");
+          if (!terms.length) return esc(s);
+          const chars = Array.from(s);
+          let n = "";
+          const map = [];
+          chars.forEach((ch, ci) => {
+            const c = norm(ch);
+            for (let k = 0; k < c.length; k++) map.push(ci);
+            n += c;
+          });
+          const on = new Array(chars.length).fill(false);
+          terms.forEach((vs) =>
+            vs.forEach((v) => {
+              let j = n.indexOf(v);
+              while (v && j !== -1) {
+                for (let k = j; k < j + v.length; k++) on[map[k]] = true;
+                j = n.indexOf(v, j + v.length);
+              }
+            })
+          );
+          let out = "";
+          let open = false;
+          chars.forEach((ch, ci) => {
+            if (on[ci] && !open) { out += "<mark>"; open = true; }
+            if (!on[ci] && open) { out += "</mark>"; open = false; }
+            out += esc(ch);
+          });
+          return open ? out + "</mark>" : out;
+        };
+
+        /* ---- Orden ---- */
+        let sortBy = "rel";
+        const collator = new Intl.Collator("es", { sensitivity: "base", numeric: true });
+        const priceOf = (p) => (p.price == null || p.price === "" || isNaN(Number(p.price)) ? null : Number(p.price));
+        const offOf = (p) => Number(p.discount) || 0;
+        const sortList = (arr) => {
+          const rows = arr.map((p, i) => ({ p, i, soon: !p.link, pr: priceOf(p), off: offOf(p) }));
+          rows.sort((a, b) => {
+            if (a.soon !== b.soon) return a.soon ? 1 : -1;
+            if (sortBy === "rel") return a.i - b.i;
+            if (sortBy === "off") {
+              if (b.off !== a.off) return b.off - a.off;
+            } else {
+              if ((a.pr == null) !== (b.pr == null)) return a.pr == null ? 1 : -1;
+              if (a.pr !== b.pr) return sortBy === "asc" ? a.pr - b.pr : b.pr - a.pr;
+              if (b.off !== a.off) return b.off - a.off;
+            }
+            return collator.compare(String(a.p.title ?? ""), String(b.p.title ?? "")) || a.i - b.i;
+          });
+          return rows.map((r) => r.p);
+        };
+
+        const filterList = () => sortList(baseList());
+        const baseList = () => {
+          const base = cat === "Todos" ? INDEX : INDEX.filter((e) => e.p.category === cat && (sub === "Todas" || e.s === sub));
+          if (!terms.length) return base.map((e) => e.p);
+          const nq = norm(query).trim();
+          return base
+            .filter((e) => terms.every((vs) => has(e.t, vs) || has(e.d, vs) || has(e.c, vs)))
+            .map((e, i) => {
+              const inT = terms.filter((vs) => has(e.t, vs)).length;
+              const starts = e.t.startsWith(nq) || terms[0].some((v) => e.t.startsWith(v));
+              const tier = inT === terms.length ? (starts ? 0 : 1) : inT > 0 ? 2 : 3;
+              return { e, i, tier };
+            })
+            .sort((a, b) => a.tier - b.tier || b.e.off - a.e.off || a.i - b.i)
+            .map((r) => r.e.p);
+        };
+
+        const card = (p) => {
+          const soon = !p.link;
+          const media = p.image && !soon
+            ? `<img src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy" />`
+            : `<span class="x-card__emoji" aria-hidden="true">🛒</span>`;
+          const badge = soon ? `<span class="x-soon">Próximamente</span>` : "";
+          const deal = !soon && (p.discount || p.oldPrice)
+            ? `<p class="x-deal">${p.discount ? `<span class="x-off">${esc(p.discount)}% OFF</span>` : ""}${p.oldPrice ? `<s class="x-price__old">${money(p.oldPrice)}</s>` : ""}</p>`
+            : "";
+          const price = !soon && p.price != null
+            ? `${deal}<p class="x-price__now${money(p.price).length >= 12 ? " is-xlong" : money(p.price).length >= 11 ? " is-long" : ""}">${money(p.price)}</p>`
+            : "";
+          const btn = soon
+            ? `<span class="x-btn is-off"><span class="x-btn__long">Ver en Mercado Libre 👉</span><span class="x-btn__short">Ver 👉</span></span>`
+            : `<div class="x-card__actions"><span class="x-btn"><span class="x-btn__long">Ver en Mercado Libre 👉</span><span class="x-btn__short">Ver 👉</span></span><span class="x-share" role="button" tabindex="0" aria-label="Compartir link" title="Compartir link">${SHARE_SVG}</span></div>`;
+          const open = soon
+            ? `<article class="x-card" data-cat="${esc(p.category)}">`
+            : `<a class="x-card" data-cat="${esc(p.category)}" href="${esc(p.link)}" target="_blank" rel="noopener">`;
+          return `${open}
+            <figure class="x-card__media">${media}${badge}</figure>
+            <div class="x-card__body">
+              <h3 class="x-card__title">${hl(p.title)}</h3>
+              <p class="x-card__desc">${esc(p.desc)}</p>
+              ${price}${btn}
+            </div>
+          ${soon ? "</article>" : "</a>"}`;
+        };
+
+        grid.innerHTML = `<p class="x-empty" hidden>Todavía no hay ofertas en esta categoría. ¡Volvé pronto! 🛒</p><div class="x-noresults" hidden><p></p><button class="x-noresults__btn" type="button">Borrar búsqueda</button></div>`;
+        const empty = grid.querySelector(".x-empty");
+        const noRes = grid.querySelector(".x-noresults");
+        const count = document.getElementById("q-count");
+
+        const renderMore = () => {
+          const next = list.slice(rendered, rendered + BATCH);
+          if (next.length) empty.insertAdjacentHTML("beforebegin", next.map(card).join(""));
+          rendered += next.length;
+          more.hidden = rendered >= list.length;
+        };
+        const show = (c) => {
+          if (c) cat = c;
+          list = filterList();
+          rendered = 0;
+          grid.querySelectorAll(".x-card").forEach((el) => el.remove());
+          const q = query.trim();
+          empty.hidden = list.length > 0 || !!terms.length;
+          noRes.hidden = list.length > 0 || !terms.length;
+          if (terms.length) {
+            const where = cat === "Todos" ? "" : ` en ${cat}${sub !== "Todas" ? ` › ${sub}` : ""}`;
+            count.textContent = `${list.length.toLocaleString("es-AR")} ${list.length === 1 ? "resultado" : "resultados"} para “${q}”${where}`;
+            count.hidden = list.length === 0;
+            noRes.querySelector("p").textContent = `No encontramos “${q}”${where}. Probá con otra palabra.`;
+          } else {
+            count.hidden = true;
+          }
+          renderMore();
+        };
+        show("Todos");
+        more.addEventListener("click", renderMore);
+        if ("IntersectionObserver" in window) {
+          new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting && !more.hidden) renderMore();
+          }, { rootMargin: "600px 0px" }).observe(more);
+        }
+
+        chips.forEach((chip) =>
+          chip.addEventListener("click", () => {
+            const cat = chip.dataset.cat;
+            chips.forEach((c) => c.setAttribute("aria-pressed", String(c === chip)));
+            sub = "Todas";
+            show(cat);
+            renderSubs();
+            const panel = document.getElementById("ofertas");
+            if (panel.getBoundingClientRect().top < 0) panel.scrollIntoView({ block: "start" });
+          })
+        );
+        subsEl.addEventListener("click", (e) => {
+          const b = e.target.closest(".x-subchip");
+          if (!b) return;
+          sub = b.dataset.sub;
+          subsEl.querySelectorAll(".x-subchip").forEach((c) => c.setAttribute("aria-pressed", String(c === b)));
+          show();
+          const panel = document.getElementById("ofertas");
+          if (panel.getBoundingClientRect().top < 0) panel.scrollIntoView({ block: "start" });
+        });
+
+        const sortSel = document.getElementById("sort");
+        sortSel.addEventListener("change", () => {
+          sortBy = sortSel.value;
+          show();
+          const panel = document.getElementById("ofertas");
+          if (panel.getBoundingClientRect().top < 0) panel.scrollIntoView({ block: "start" });
+        });
+
+        const input = document.getElementById("q");
+        const clearBtn = document.getElementById("q-clear");
+        const sugg = document.getElementById("q-sugg");
+        const panel = document.getElementById("ofertas");
+        let timer = 0;
+        const syncUi = () => {
+          clearBtn.hidden = !input.value;
+          sugg.hidden = !!input.value.trim() || document.activeElement !== input;
+        };
+        const runSearch = () => {
+          clearTimeout(timer);
+          const q = input.value;
+          const next = norm(q).split(/[\s,;:()¿?¡!"“”]+/).filter(Boolean).map(variants);
+          const changed = JSON.stringify(next) !== JSON.stringify(terms);
+          query = q;
+          terms = next;
+          if (!changed) return;
+          show();
+          if (panel.getBoundingClientRect().top < 0) panel.scrollIntoView({ block: "start" });
+        };
+        const clearSearch = (focus) => {
+          input.value = "";
+          runSearch();
+          if (focus) input.focus();
+          syncUi();
+        };
+        input.addEventListener("input", () => {
+          syncUi();
+          clearTimeout(timer);
+          timer = setTimeout(runSearch, 200);
+        });
+        input.addEventListener("focus", syncUi);
+        input.addEventListener("blur", () => { sugg.hidden = true; });
+        input.addEventListener("keydown", (e) => {
+          if (e.key === "Enter") {
+            e.preventDefault();
+            runSearch();
+            input.blur();
+          } else if (e.key === "Escape") {
+            e.preventDefault();
+            clearSearch(true);
+          }
+        });
+        clearBtn.addEventListener("click", () => clearSearch(true));
+        noRes.querySelector("button").addEventListener("click", () => clearSearch(false));
+        sugg.addEventListener("pointerdown", (e) => e.preventDefault());
+        sugg.querySelectorAll(".x-sugg__btn").forEach((b) =>
+          b.addEventListener("click", () => {
+            input.value = b.textContent;
+            runSearch();
+            input.blur();
+            syncUi();
+          })
+        );
+
+        const countNum = document.getElementById("x-count-num");
+        if (countNum) countNum.textContent = PRODUCTS.length.toLocaleString("es-AR");
+        const stickyEl = document.querySelector(".x-sticky");
+
+        const toTop = document.querySelector(".x-totop");
+        const onScroll = () => {
+          if (stickyEl) stickyEl.classList.toggle("is-scrolled", window.scrollY > 4);
+          const on = window.scrollY > 500;
+          if (on) toTop.hidden = false;
+          requestAnimationFrame(() => toTop.classList.toggle("is-on", on));
+          if (!on) toTop.hidden = true;
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+        onScroll();
+
+        /* Collapse the brand row once scrolled; hysteresis avoids flicker */
+        let collapsed = false;
+        let ticking = false;
+        const updateHeader = () => {
+          ticking = false;
+          if (!stickyEl) return;
+          const y = window.scrollY;
+          const room = document.documentElement.scrollHeight - window.innerHeight;
+          if (!collapsed && y > 60 && room > 160) collapsed = true;
+          else if (collapsed && y < 10) collapsed = false;
+          stickyEl.classList.toggle("is-collapsed", collapsed);
+        };
+        window.addEventListener("scroll", () => {
+          if (!ticking) { ticking = true; requestAnimationFrame(updateHeader); }
+        }, { passive: true });
+        updateHeader();
+        toTop.addEventListener("click", () => {
+          const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+        });
+
+        /* ---- Ficha de producto (bottom sheet / modal) ---- */
+        const codeOf = (link) => {
+          const m = String(link || "").match(/meli\.la\/([^/?#]+)/);
+          return m ? m[1] : "";
+        };
+        const BYCODE = {};
+        PRODUCTS.forEach((p) => { const c = codeOf(p.link); if (c && !BYCODE[c]) BYCODE[c] = p; });
+        const sheet = document.getElementById("sheet");
+        const sheetPanel = sheet.querySelector(".x-sheet__panel");
+        const shBody = document.getElementById("sh-body");
+        const shCta = document.getElementById("sh-cta");
+        const others = Array.from(document.querySelectorAll(".x-store > :not(#sheet)"));
+        const reduceMq = window.matchMedia("(prefers-reduced-motion: reduce)");
+        let current = "";
+        let lastFocus = null;
+        let closeTimer = 0;
+
+        const related = (p) => {
+          const pr = Number(p.price) || 0;
+          return PRODUCTS.filter((o) => o !== p && o.link && o.category === p.category && o.price != null)
+            .map((o) => ({ o, d: Math.abs(Number(o.price) - pr) }))
+            .sort((a, b) => a.d - b.d)
+            .slice(0, 8)
+            .map((r) => r.o);
+        };
+
+        const fill = (code) => {
+          const p = BYCODE[code];
+          const d = DETAILS[code] || {};
+          const v = Array.isArray(d.v) ? d.v : [];
+          const badges = (d.h ? `<span class="x-badge-hot">${esc(d.h)}</span>` : "") + (v[1] == 1 ? `<span class="x-badge-off">Tienda oficial ✔</span>` : "");
+          const price = Number(p.price);
+          const old = Number(p.oldPrice) || 0;
+          const pct = Number(p.discount) || (old > price && price ? Math.round((1 - price / old) * 100) : 0);
+          let priceHtml = "";
+          if (p.price != null) {
+            priceHtml = `<div class="x-sheet__price">
+              ${old > price ? `<s class="x-sheet__old">${money(old)}</s>` : ""}
+              <div class="x-sheet__nowrow"><span class="x-sheet__now">${money(price)}</span>${pct ? `<span class="x-sheet__pct">${pct}% OFF</span>` : ""}</div>
+              ${old > price ? `<span class="x-sheet__save">Ahorrás ${money(old - price)}</span>` : ""}
+            </div>`;
+          }
+          let quotas = "";
+          if (Array.isArray(d.q) && d.q[0] && d.q[1]) {
+            quotas = d.q[2] == 1
+              ? `<p class="x-sheet__line is-green">Mismo precio en ${esc(d.q[0])} cuotas de ${money(d.q[1])}</p>`
+              : `<p class="x-sheet__line">${esc(d.q[0])} cuotas de ${money(d.q[1])}</p>`;
+          }
+          const ship = d.s ? `<p class="x-sheet__line is-green"><span aria-hidden="true">🚚</span> ${esc(d.s)}</p>` : "";
+          const seller = v[0] ? `<p class="x-sheet__line is-muted">${esc(v[0])}</p>` : "";
+          const bullets = aiDetails(p, DETAILS[code]) || [];
+          const ai = bullets.length
+            ? `<section class="x-sheet__sec" aria-labelledby="sh-ai"><h3 class="x-sheet__h" id="sh-ai">Detalles destacados ✨</h3>
+                <ul class="x-sheet__list">${bullets.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>
+                <p class="x-sheet__fine">Resumen generado con IA a partir de la publicación. Verificá los detalles en Mercado Libre.</p></section>`
+            : "";
+          const rel = related(p);
+          const relHtml = rel.length
+            ? `<section class="x-sheet__sec" aria-labelledby="sh-rel"><h3 class="x-sheet__h" id="sh-rel">También te puede interesar</h3>
+                <div class="x-rel">${rel.map((o) => `<button class="x-rel__item" type="button" data-code="${esc(codeOf(o.link))}">
+                  <img src="${esc(o.image)}" alt="" loading="lazy" />
+                  <span class="x-rel__price">${money(o.price)}${o.discount ? `<span class="x-rel__off">${esc(o.discount)}% OFF</span>` : ""}</span>
+                  <span class="x-rel__title">${esc(o.title)}</span></button>`).join("")}</div></section>`
+            : "";
+          shBody.innerHTML = `
+            <figure class="x-sheet__media" role="button" tabindex="0" aria-label="Ampliar imagen" aria-pressed="false">
+              ${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.title)}" />` : `<span class="x-card__emoji" aria-hidden="true">🛒</span>`}
+            </figure>
+            <div class="x-sheet__info">
+              <p class="x-sheet__badges">${badges}</p>
+              <h2 class="x-sheet__title" id="sh-title">${esc(p.title)}</h2>
+              ${priceHtml}${quotas}${ship}${seller}
+              ${p.link ? `<div class="x-sheet__share">
+                <button class="x-sheet__sharebtn" type="button" data-share>${SHARE_SVG}Compartir link del producto</button>
+                <div class="x-linkfield">
+                  <input class="x-linkfield__input" type="text" readonly value="${esc(p.link)}" aria-label="Link del producto" />
+                  <button class="x-linkfield__btn" type="button" data-copy>Copiar</button>
+                </div>
+              </div>` : ""}${ai}
+              <p class="x-sheet__fine">Precio y cuotas pueden cambiar en Mercado Libre.</p>
+              ${relHtml}
+            </div>`;
+          shCta.href = p.link;
+          shBody.scrollTop = 0;
+          current = code;
+        };
+
+        const setLock = (on) => {
+          document.documentElement.classList.toggle("x-locked", on);
+          others.forEach((el) => { if (on) el.setAttribute("inert", ""); else el.removeAttribute("inert"); });
+        };
+        const openSheet = (code, push) => {
+          if (!BYCODE[code]) return;
+          clearTimeout(closeTimer);
+          const wasOpen = !sheet.hidden && sheet.classList.contains("is-open");
+          fill(code);
+          if (push) history.pushState({ sheet: code }, "", "#p-" + code);
+          if (wasOpen) return;
+          lastFocus = document.activeElement;
+          sheet.hidden = false;
+          setLock(true);
+          void sheet.offsetHeight;
+          sheet.classList.add("is-open");
+          sheet.querySelector(".x-sheet__x").focus({ preventScroll: true });
+        };
+        const hideSheet = () => {
+          if (sheet.hidden) return;
+          sheet.classList.remove("is-open");
+          setLock(false);
+          current = "";
+          const done = () => { if (!sheet.classList.contains("is-open")) { sheet.hidden = true; shBody.innerHTML = ""; } };
+          closeTimer = setTimeout(done, reduceMq.matches ? 0 : 320);
+          if (lastFocus && document.contains(lastFocus)) lastFocus.focus({ preventScroll: true });
+        };
+        const requestClose = () => {
+          if (history.state && history.state.sheet) history.back();
+          else {
+            hideSheet();
+            if (/^#p-/.test(location.hash)) history.replaceState(null, "", location.pathname + location.search);
+          }
+        };
+
+        /* ---- Compartir link: share → copiar → copia manual ---- */
+        const toastEl = document.getElementById("toast");
+        const pop = document.getElementById("share-pop");
+        const popInput = document.getElementById("pop-input");
+        const popCopy = document.getElementById("pop-copy");
+        let toastTimer = 0;
+        let popFocus = null;
+        const toast = (msg) => {
+          clearTimeout(toastTimer);
+          toastEl.textContent = msg;
+          toastEl.classList.add("is-on");
+          toastTimer = setTimeout(() => toastEl.classList.remove("is-on"), 2000);
+        };
+        const legacyCopy = (text) => {
+          const prev = document.activeElement;
+          const ta = document.createElement("textarea");
+          ta.value = text;
+          ta.setAttribute("readonly", "");
+          ta.style.cssText = "position:fixed;top:0;left:0;width:1px;height:1px;padding:0;border:0;opacity:0;";
+          document.body.appendChild(ta);
+          let ok = false;
+          try {
+            ta.focus({ preventScroll: true });
+            ta.select();
+            ta.setSelectionRange(0, text.length);
+            ok = document.execCommand("copy");
+          } catch (err) { ok = false; }
+          ta.remove();
+          if (prev && prev.focus) prev.focus({ preventScroll: true });
+          return ok;
+        };
+        const copyText = async (text) => {
+          try {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              await navigator.clipboard.writeText(text);
+              return true;
+            }
+          } catch (err) { /* bloqueado (iframe/permisos): probamos el método clásico */ }
+          return legacyCopy(text);
+        };
+        const openPop = (link) => {
+          popFocus = document.activeElement;
+          popInput.value = link;
+          pop.hidden = false;
+          popInput.focus({ preventScroll: true });
+          popInput.select();
+          popInput.setSelectionRange(0, link.length);
+        };
+        const closePop = () => {
+          if (pop.hidden) return;
+          pop.hidden = true;
+          if (popFocus && document.contains(popFocus)) popFocus.focus({ preventScroll: true });
+        };
+        const copyLink = async (link) => {
+          if (await copyText(link)) toast("Link copiado ✓");
+          else openPop(link);
+        };
+        const shareLink = async (p) => {
+          if (!p || !p.link) return;
+          if (navigator.share) {
+            try {
+              await navigator.share({ title: p.title, url: p.link });
+              return;
+            } catch (err) {
+              if (err && err.name === "AbortError") return;
+            }
+          }
+          copyLink(p.link);
+        };
+        const productOf = (href) => BYCODE[codeOf(href)] || PRODUCTS.find((o) => o.link === href);
+        pop.addEventListener("click", (e) => { if (e.target.closest("[data-pop-close]")) closePop(); });
+        popInput.addEventListener("focus", () => popInput.select());
+        popCopy.addEventListener("click", async () => {
+          const link = popInput.value;
+          if (await copyText(link)) { closePop(); toast("Link copiado ✓"); }
+          else { popInput.focus({ preventScroll: true }); popInput.select(); popInput.setSelectionRange(0, link.length); }
+        });
+        document.addEventListener("keydown", (e) => {
+          if (pop.hidden) return;
+          if (e.key === "Escape") { e.preventDefault(); e.stopImmediatePropagation(); closePop(); return; }
+          if (e.key === "Tab") {
+            const f = [popInput, popCopy, pop.querySelector(".x-pop__close")];
+            const i = f.indexOf(document.activeElement);
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            f[(i + (e.shiftKey ? f.length - 1 : 1)) % f.length].focus();
+          }
+        }, true);
+        grid.addEventListener("keydown", (e) => {
+          const sh = e.target.closest && e.target.closest(".x-share");
+          if (!sh || (e.key !== "Enter" && e.key !== " ")) return;
+          e.preventDefault();
+          e.stopPropagation();
+          const a = sh.closest("a.x-card");
+          if (a) shareLink(productOf(a.getAttribute("href")));
+        });
+
+        grid.addEventListener("click", (e) => {
+          const sh = e.target.closest(".x-share");
+          if (sh) {
+            e.preventDefault();
+            e.stopPropagation();
+            const card = sh.closest("a.x-card");
+            if (card) shareLink(productOf(card.getAttribute("href")));
+            return;
+          }
+          const a = e.target.closest("a.x-card");
+          if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+          const code = codeOf(a.getAttribute("href"));
+          if (!BYCODE[code]) return;
+          e.preventDefault();
+          openSheet(code, true);
+        });
+        sheet.addEventListener("click", (e) => {
+          if (e.target.closest("[data-close]")) { e.preventDefault(); requestClose(); return; }
+          if (e.target.closest("[data-share]")) { shareLink(BYCODE[current]); return; }
+          if (e.target.closest("[data-copy]")) { const p = BYCODE[current]; if (p && p.link) copyLink(p.link); return; }
+          if (e.target.classList && e.target.classList.contains("x-linkfield__input")) { e.target.select(); return; }
+          const rel = e.target.closest(".x-rel__item");
+          if (rel) {
+            fill(rel.dataset.code);
+            history.replaceState({ sheet: rel.dataset.code }, "", "#p-" + rel.dataset.code);
+            sheet.querySelector(".x-sheet__x").focus({ preventScroll: true });
+            return;
+          }
+          const media = e.target.closest(".x-sheet__media");
+          if (media) {
+            const img = media.querySelector("img");
+            const zoom = !media.classList.contains("is-zoom");
+            if (img && zoom && e.clientX) {
+              const r = media.getBoundingClientRect();
+              img.style.transformOrigin = `${((e.clientX - r.left) / r.width) * 100}% ${((e.clientY - r.top) / r.height) * 100}%`;
+            } else if (img && zoom) img.style.transformOrigin = "50% 50%";
+            media.classList.toggle("is-zoom", zoom);
+            media.setAttribute("aria-pressed", String(zoom));
+            media.setAttribute("aria-label", zoom ? "Achicar imagen" : "Ampliar imagen");
+          }
+        });
+        shBody.addEventListener("mousemove", (e) => {
+          const media = e.target.closest(".x-sheet__media.is-zoom");
+          const img = media && media.querySelector("img");
+          if (!img) return;
+          const r = media.getBoundingClientRect();
+          img.style.transformOrigin = `${((e.clientX - r.left) / r.width) * 100}% ${((e.clientY - r.top) / r.height) * 100}%`;
+        });
+        document.addEventListener("keydown", (e) => {
+          if (sheet.hidden || !sheet.classList.contains("is-open")) return;
+          if (e.key === "Escape") { e.preventDefault(); requestClose(); return; }
+          if ((e.key === "Enter" || e.key === " ") && e.target.classList && e.target.classList.contains("x-sheet__media")) {
+            e.preventDefault();
+            e.target.click();
+            return;
+          }
+          if (e.key === "Tab") {
+            const f = Array.from(sheetPanel.querySelectorAll('a[href], button:not([disabled]), [tabindex="0"]')).filter((el) => el.offsetParent !== null);
+            if (!f.length) return;
+            const first = f[0], last = f[f.length - 1];
+            if (e.shiftKey && (document.activeElement === first || !sheetPanel.contains(document.activeElement))) { e.preventDefault(); last.focus(); }
+            else if (!e.shiftKey && (document.activeElement === last || !sheetPanel.contains(document.activeElement))) { e.preventDefault(); first.focus(); }
+          }
+        });
+        window.addEventListener("popstate", () => {
+          const m = location.hash.match(/^#p-(.+)$/);
+          if (m && BYCODE[m[1]]) openSheet(m[1], false);
+          else hideSheet();
+        });
+        const initial = location.hash.match(/^#p-(.+)$/);
+        if (initial && BYCODE[initial[1]]) {
+          history.replaceState(null, "", location.pathname + location.search);
+          openSheet(initial[1], true);
+        }
+      })();
+    
+      }
+      Promise.all([
+        fetch("productos.json", { cache: "no-cache" }).then((r) => r.json()),
+        fetch("detalles.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => ({}))
+      ]).then(([p, d]) => {
+        PRODUCTS = p.filter((x) => x.activo !== false);
+        DETAILS = d;
+        startApp();
+      }).catch((e) => console.error("No se pudieron cargar los productos", e));
+    </script>
+  </body>
+</html>
